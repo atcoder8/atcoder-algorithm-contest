@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Pathname of the directory for the AtCoder contest.
-readonly CONTEST_DIR_PREFIX="$HOME/contests/atcoder-algorithm-contest/judge-2025"
+readonly CONTEST_DIR_PREFIX="$HOME/contests/atcoder-algorithm-contest/judge-202510"
 
 if [ $# -ne 1 ]; then
   echo "Usage: ./new <CONTEST ID>"
