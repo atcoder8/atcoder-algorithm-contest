@@ -5,4 +5,5 @@ resolver = "2"
 members = [
   "abc430",
   "abc431",
+  "abc432",
 ]
