@@ -2,7 +2,7 @@ use proconio::input;
 
 fn main() {
     match solve() {
-        Some(ans) => println!("{}", ans),
+        Some(answer) => println!("{answer}"),
         None => println!("-1"),
     }
 }
@@ -16,16 +16,14 @@ fn solve() -> Option<usize> {
     let d = y - x;
     let min_a = *aa.iter().min().unwrap();
 
-    let mut sum = 0_usize;
-    for &a in &aa {
-        let diff_num_candies = (a - min_a) * y;
-
-        if a < diff_num_candies / d || diff_num_candies % d != 0 {
-            return None;
-        }
-
-        sum += a - diff_num_candies / d;
-    }
-
-    Some(sum)
+    aa.iter()
+        .map(|&a| {
+            let dw = (a - min_a) * y;
+            if dw % d == 0 && dw / d <= a {
+                Some(a - dw / d)
+            } else {
+                None
+            }
+        })
+        .sum()
 }
