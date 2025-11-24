@@ -1,5 +1,3 @@
-// unfinished
-
 use itertools::{Itertools, enumerate};
 use proconio::input;
 
@@ -21,7 +19,7 @@ fn main() {
         .map(|ch| ch.to_digit(10).unwrap() as usize)
         .collect_vec();
 
-    let mut acc_counts = vec![[0_usize; 10]; n + 1];
+    let mut acc_counts = vec![[0_usize; 11]; n + 1];
     for (i, &digit) in enumerate(&digits) {
         let mut next_counts = acc_counts[i];
         next_counts[digit] += 1;
@@ -32,40 +30,14 @@ fn main() {
         acc_counts[right][target] - acc_counts[left][target]
     };
 
-    let count_by_digit = |target: usize| {
-        let mut num_combs = Mint::new(0);
-        let mut counts = [0_usize; 10];
-
-        for &d in &digits {
-            counts[d] += 1;
-
-            if d != target {
-                continue;
-            }
-
-            let mut pos1 = 0_usize;
-            let mut pos2 = n;
-            for cnt in 1.. {
-                while pos1 < n && digits[pos1] != target {
-                    pos1 += 1;
-                }
-                while pos2 > 0 && digits[pos2 - 1] != target + 1 {
-                    pos2 -= 1;
-                }
-
-                if pos1 >= pos2 {
-                    break;
-                }
-
-                num_combs += factorial.combinations(cnt, calc_sum_count(target + 1, pos1 + 1, n))
-                    * factorial.combinations(cnt, calc_sum_count(target, 0, pos2));
-            }
-        }
-
-        num_combs
+    let calc_num_combs = |pivot: usize| {
+        let digit = digits[pivot];
+        let p = calc_sum_count(digit, 0, pivot);
+        let q = calc_sum_count(digit + 1, pivot, n);
+        factorial.combinations(p + q, p + 1)
     };
 
-    let num_combs = (0..9).map(|target| count_by_digit(target)).sum::<Mint>();
+    let num_combs = (0..n).map(calc_num_combs).sum::<Mint>();
     println!("{num_combs}");
 }
 
