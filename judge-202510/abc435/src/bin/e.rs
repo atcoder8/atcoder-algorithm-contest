@@ -168,13 +168,13 @@ pub mod disjoint_intervals {
         /// Returns the smallest non-negative integer not included in the set.
         pub fn mex(&self) -> usize {
             match self.intervals.first_key_value() {
-                Some((&start, &end)) if start == 0 => end,
+                Some((&0, &end)) => end,
                 _ => 0,
             }
         }
 
         /// Creates an iterator that traverses the elements contained in the set.
-        pub fn range_inclusively(&self, range: ops::Range<usize>) -> RangeInclusively<usize> {
+        pub fn range_inclusively(&'_ self, range: ops::Range<usize>) -> RangeInclusively<'_, usize> {
             RangeInclusively {
                 intervals: self,
                 range,
@@ -182,7 +182,7 @@ pub mod disjoint_intervals {
         }
 
         /// Creates an iterator that traverses the elements not contained in the set.
-        pub fn range_exclusively(&self, range: ops::Range<usize>) -> RangeExclusively<usize> {
+        pub fn range_exclusively(&'_ self, range: ops::Range<usize>) -> RangeExclusively<'_, usize> {
             RangeExclusively {
                 intervals: self,
                 range,
@@ -197,7 +197,7 @@ pub mod disjoint_intervals {
         range: ops::Range<usize>,
     }
 
-    impl<'a> Iterator for RangeInclusively<'a, usize> {
+    impl Iterator for RangeInclusively<'_, usize> {
         type Item = usize;
 
         fn next(&mut self) -> Option<Self::Item> {
@@ -221,7 +221,7 @@ pub mod disjoint_intervals {
         }
     }
 
-    impl<'a> DoubleEndedIterator for RangeInclusively<'a, usize> {
+    impl DoubleEndedIterator for RangeInclusively<'_, usize> {
         fn next_back(&mut self) -> Option<Self::Item> {
             if self.range.is_empty() {
                 return None;
@@ -250,7 +250,7 @@ pub mod disjoint_intervals {
         range: ops::Range<usize>,
     }
 
-    impl<'a> Iterator for RangeExclusively<'a, usize> {
+    impl Iterator for RangeExclusively<'_, usize> {
         type Item = usize;
 
         fn next(&mut self) -> Option<Self::Item> {
@@ -278,7 +278,7 @@ pub mod disjoint_intervals {
         }
     }
 
-    impl<'a> DoubleEndedIterator for RangeExclusively<'a, usize> {
+    impl DoubleEndedIterator for RangeExclusively<'_, usize> {
         fn next_back(&mut self) -> Option<Self::Item> {
             if self.range.is_empty() {
                 return None;
