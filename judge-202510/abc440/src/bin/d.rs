@@ -5,27 +5,31 @@ use superslice::Ext;
 fn main() {
     input! {
         (n, q): (usize, usize),
-        mut aa: [i64; n],
-        xy: [(i64, i64); q],
+        mut aa: [usize; n],
+        xy: [(usize, usize); q],
     }
 
     aa.sort_unstable();
 
-    let solve = |x: i64, y: i64| {
+    let solve = |x: usize, y: usize| {
         let start = aa.lower_bound(&x);
 
-        let mut ok = 3 * 10_i64.pow(10);
-        let mut ng = 0_i64;
+        if start == n || aa[start] - x >= y {
+            return x + y - 1;
+        }
+
+        let mut ok = n;
+        let mut ng = start;
         while ok.abs_diff(ng) > 1 {
             let mid = (ok + ng) / 2;
-            if mid - x + 1 - aa[start..].upper_bound(&mid) as i64 >= y {
+            if aa[mid] + start >= x + y + mid {
                 ok = mid;
             } else {
                 ng = mid;
             }
         }
 
-        ok
+        x + y - 1 + ok - start
     };
 
     let output = xy.iter().map(|&(x, y)| solve(x, y)).join("\n");
