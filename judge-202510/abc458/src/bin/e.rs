@@ -9,19 +9,14 @@ fn main() {
         (x1, x2, x3): (usize, usize, usize),
     }
 
-    let n = x1 + x2 + x3;
+    let factorial = Factorial::<Mint>::new(x2 + x1.max(x3));
 
-    let factorial = Factorial::<Mint>::new(n);
-
-    let num_combs = (1..=x2)
+    let num_combs = (0..=(x2 + 1).min(x1).min(x3))
         .map(|k| {
-            factorial.combinations(x2 + 1, k)
-                * if x1 >= k {
-                    factorial.combinations_with_repetition(k, x1 - k)
-                } else {
-                    Mint::new(0)
-                }
-                * factorial.combinations_with_repetition(x2 + 1 - k, x3)
+            [Mint::new(1), Mint::new(-1)][k % 2]
+                * factorial.combinations(x2 + 1, k)
+                * factorial.combinations(x2 + x1 - k, x2)
+                * factorial.combinations(x2 + x3 - k, x2)
         })
         .sum::<Mint>();
     println!("{num_combs}");
