@@ -1,56 +1,104 @@
-// unfinished
-
-use itertools::Itertools;
+use itertools::{Itertools, iproduct};
 use proconio::input;
 
-use crate::modint2::Modint998244353;
+use crate::modint2::{Factorial, Modint998244353};
 
 type Mint = Modint998244353;
 
 fn main() {
     input! {
         n: usize,
-        aa: [usize; 2 * n],
+        aa: [i32; 2 * n],
     }
 
-    let output = solve(&aa).iter().join(" ");
-    println!("{output}");
-}
+    let factorial = Factorial::<Mint>::new(2 * n);
 
-fn solve(aa: &[usize]) -> Vec<Mint> {
-    let n = aa.len() / 2;
+    let max_a = *aa.iter().max().unwrap();
 
-    if aa.iter().all_equal() {
-        return vec![Mint::new(aa.len()).inv(); aa.len()];
-    }
+    let bb = aa.iter().map(|&a| a.max(max_a - 2)).collect_vec();
 
-    let m = *aa.iter().max().unwrap();
-    let m1 = m - 1;
-    let m2 = m.saturating_sub(2);
+    let pairs = [[0, 0], [0, 1], [0, 2], [1, 1], [1, 2], [2, 2]]
+        .map(|diffs| diffs.map(|diff| max_a - diff));
 
-    let get_group = |a1: usize, a2: usize| {
-        let mut a1 = a1.max(m2);
-        let mut a2 = a2.max(m2);
-        if a1 < a2 {
-            std::mem::swap(&mut a1, &mut a2);
-        }
-
-        [(m, m), (m, m1), (m, m2), (m1, m1), (m1, m2), (m2, m2)]
-            .iter()
-            .position(|&pair| pair == (a1, a2))
+    let get_group = |b1: i32, b2: i32| {
+        pairs
+            .into_iter()
+            .position(|pair| pair == [b1.max(b2), b1.min(b2)])
             .unwrap()
     };
 
     let group_by_pair = (0..n)
-        .map(|pair_idx| get_group(aa[2 * pair_idx], aa[2 * pair_idx + 1]))
+        .map(|pair_idx| get_group(bb[2 * pair_idx], bb[2 * pair_idx + 1]))
         .collect_vec();
 
     let mut count_by_group = [0_usize; 6];
-    for &group in &group_by_pair {
-        count_by_group[group] += 1;
+    for &group_idx in &group_by_pair {
+        count_by_group[group_idx] += 1;
     }
 
-    todo!()
+    let inv_2 = Mint::new(2).inv();
+
+    let calc_probability = |num_wins: i32, group_idx: usize, inner_idx: usize| {
+        if count_by_group[group_idx] == 0 || (num_wins == max_a && count_by_group[0] > 0) {
+            return Mint::new(0);
+        }
+
+        let mut count_by_group = count_by_group;
+        count_by_group[group_idx] -= 1;
+
+        let mut win_prob = Mint::new(0);
+
+        for win_side in 0..2 {
+            let mut pair = pairs[group_idx];
+            pair[win_side] += 1;
+
+            if pair[inner_idx] != num_wins || pair[1 - inner_idx] > num_wins {
+                continue;
+            }
+
+            let mut prod_p = inv_2;
+            let mut decided_win_cnt = 1 + (pair[1 - inner_idx] == num_wins) as usize;
+            let mut fuzzy_win_cnt = 0;
+
+            if num_wins == max_a + 1 {
+                decided_win_cnt += count_by_group[0];
+                fuzzy_win_cnt += count_by_group[1] + count_by_group[2];
+            } else {
+                prod_p *= Mint::new(0).pow(count_by_group[0])
+                    * inv_2.pow(count_by_group[1] + count_by_group[2]);
+                decided_win_cnt += 2 * count_by_group[1] + count_by_group[2] + count_by_group[3];
+                fuzzy_win_cnt += count_by_group[4];
+            }
+
+            for add_win_cnt in 0..=fuzzy_win_cnt {
+                let num_candidates = decided_win_cnt + add_win_cnt;
+                win_prob += prod_p
+                    * inv_2.pow(fuzzy_win_cnt)
+                    * factorial.combinations(fuzzy_win_cnt, add_win_cnt)
+                    * Mint::new(num_candidates).inv();
+            }
+        }
+
+        win_prob
+    };
+
+    let mut probabilities = vec![[Mint::new(0); 2]; 6];
+    for (num_wins, group_idx, inner_idx) in iproduct!(max_a..=max_a + 1, 0..6, 0..2) {
+        probabilities[group_idx][inner_idx] += calc_probability(num_wins, group_idx, inner_idx);
+    }
+
+    let output = (0..n)
+        .flat_map(|pair_idx| {
+            let group_idx = group_by_pair[pair_idx];
+            let mut prob_pair = probabilities[group_idx];
+            let offset = 2 * pair_idx;
+            if bb[offset] < bb[offset + 1] {
+                prob_pair.reverse();
+            }
+            prob_pair
+        })
+        .join(" ");
+    println!("{output}");
 }
 
 pub mod modint2 {
