@@ -36,7 +36,7 @@ fn main() {
         count_by_group[group_idx] += 1;
     }
 
-    let inv_2 = Mint::new(2).inv();
+    let inv2 = Mint::new(2).inv();
 
     let calc_probability = |num_wins: i32, group_idx: usize, inner_idx: usize| {
         if count_by_group[group_idx] == 0 || (num_wins == max_a && count_by_group[0] > 0) {
@@ -46,40 +46,41 @@ fn main() {
         let mut count_by_group = count_by_group;
         count_by_group[group_idx] -= 1;
 
-        let mut win_prob = Mint::new(0);
+        let mut num_this_wins = pairs[group_idx][inner_idx];
+        let mut num_other_wins = pairs[group_idx][1 - inner_idx];
 
-        for win_side in 0..2 {
-            let mut pair = pairs[group_idx];
-            pair[win_side] += 1;
-
-            if pair[inner_idx] != num_wins || pair[1 - inner_idx] > num_wins {
-                continue;
-            }
-
-            let mut prod_p = inv_2;
-            let mut decided_win_cnt = 1 + (pair[1 - inner_idx] == num_wins) as usize;
-            let mut fuzzy_win_cnt = 0;
-
-            if num_wins == max_a + 1 {
-                decided_win_cnt += count_by_group[0];
-                fuzzy_win_cnt += count_by_group[1] + count_by_group[2];
-            } else {
-                prod_p *= Mint::new(0).pow(count_by_group[0])
-                    * inv_2.pow(count_by_group[1] + count_by_group[2]);
-                decided_win_cnt += 2 * count_by_group[1] + count_by_group[2] + count_by_group[3];
-                fuzzy_win_cnt += count_by_group[4];
-            }
-
-            for add_win_cnt in 0..=fuzzy_win_cnt {
-                let num_candidates = decided_win_cnt + add_win_cnt;
-                win_prob += prod_p
-                    * inv_2.pow(fuzzy_win_cnt)
-                    * factorial.combinations(fuzzy_win_cnt, add_win_cnt)
-                    * Mint::new(num_candidates).inv();
-            }
+        if num_this_wins + 1 == num_wins {
+            num_this_wins += 1;
+        } else {
+            num_other_wins += 1;
         }
 
-        win_prob
+        if num_this_wins != num_wins || num_other_wins > num_wins {
+            return Mint::new(0);
+        }
+
+        let mut prod_p = inv2;
+        let mut basic_cand_cnt = 1 + (num_other_wins == num_wins) as usize;
+        let mut extra_cand_cnt = 0;
+
+        if num_wins == max_a + 1 {
+            basic_cand_cnt += count_by_group[0];
+            extra_cand_cnt += count_by_group[1] + count_by_group[2];
+        } else {
+            prod_p *= Mint::new(0).pow(count_by_group[0])
+                * inv2.pow(count_by_group[1] + count_by_group[2]);
+            basic_cand_cnt += 2 * count_by_group[1] + count_by_group[2] + count_by_group[3];
+            extra_cand_cnt += count_by_group[4];
+        }
+
+        prod_p
+            * inv2.pow(extra_cand_cnt)
+            * (0..=extra_cand_cnt)
+                .map(|add_cand_cnt| {
+                    factorial.combinations(extra_cand_cnt, add_cand_cnt)
+                        * Mint::new(basic_cand_cnt + add_cand_cnt).inv()
+                })
+                .sum::<Mint>()
     };
 
     let mut probabilities = vec![[Mint::new(0); 2]; 6];
