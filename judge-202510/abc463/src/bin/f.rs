@@ -1,5 +1,6 @@
-use itertools::{Itertools, iproduct};
+use itertools::{Itertools, iproduct, izip};
 use proconio::input;
+use smallvec::SmallVec;
 
 use crate::modint2::{Factorial, Modint998244353};
 
@@ -8,27 +9,62 @@ type Mint = Modint998244353;
 fn main() {
     input! {
         n: usize,
-        aa: [i32; 2 * n],
+        mut aa: [i32; 2 * n],
     }
 
-    let factorial = Factorial::<Mint>::new(2 * n);
-
     let max_a = *aa.iter().max().unwrap();
+    aa.iter_mut().for_each(|a| *a = (*a - max_a).max(-2));
 
-    let bb = aa.iter().map(|&a| a.max(max_a - 2)).collect_vec();
+    let score_pairs = [[0, 0], [0, -1], [0, -2], [-1, -1], [-1, -2], [-2, -2]];
 
-    let pairs = [[0, 0], [0, 1], [0, 2], [1, 1], [1, 2], [2, 2]]
-        .map(|diffs| diffs.map(|diff| max_a - diff));
+    #[derive(Debug, Clone, Copy)]
+    enum Contribution {
+        Basic { p: Mint, k: usize },
+        Extra,
+    }
 
-    let get_group = |b1: i32, b2: i32| {
-        pairs
-            .into_iter()
-            .position(|pair| pair == [b1.max(b2), b1.min(b2)])
-            .unwrap()
+    let inv2 = Mint::new(2).inv();
+
+    let calc_contribution = |dest_score: i32, score_pair: [i32; 2]| {
+        let mut kk = SmallVec::<[usize; 2]>::new();
+        for side in [0, 1] {
+            let mut score_pair = score_pair;
+            score_pair[side] += 1;
+            if score_pair.into_iter().any(|score| score > dest_score) {
+                continue;
+            }
+            let k = score_pair
+                .into_iter()
+                .filter(|&score| score == dest_score)
+                .count();
+            kk.push(k);
+        }
+
+        if kk.iter().all_equal() {
+            Contribution::Basic {
+                p: kk.len() * inv2,
+                k: if kk.is_empty() { 0 } else { kk[0] },
+            }
+        } else {
+            Contribution::Extra
+        }
     };
 
+    let contributions = [0, 1]
+        .map(|dest_score| score_pairs.map(|score_pair| calc_contribution(dest_score, score_pair)));
+
     let group_by_pair = (0..n)
-        .map(|pair_idx| get_group(bb[2 * pair_idx], bb[2 * pair_idx + 1]))
+        .map(|pair_idx| {
+            let mut score1 = aa[2 * pair_idx];
+            let mut score2 = aa[2 * pair_idx + 1];
+            if score1 < score2 {
+                std::mem::swap(&mut score1, &mut score2);
+            }
+            score_pairs
+                .into_iter()
+                .position(|score_pair| [score1, score2] == score_pair)
+                .unwrap()
+        })
         .collect_vec();
 
     let mut count_by_group = [0_usize; 6];
@@ -36,41 +72,41 @@ fn main() {
         count_by_group[group_idx] += 1;
     }
 
-    let inv2 = Mint::new(2).inv();
+    let factorial = Factorial::<Mint>::new(2 * n);
 
-    let calc_probability = |num_wins: i32, group_idx: usize, inner_idx: usize| {
-        if count_by_group[group_idx] == 0 || (num_wins == max_a && count_by_group[0] > 0) {
+    let calc_probability = |dest_score: i32, group_idx: usize, side: usize| {
+        if count_by_group[group_idx] == 0 {
             return Mint::new(0);
         }
 
         let mut count_by_group = count_by_group;
         count_by_group[group_idx] -= 1;
 
-        let mut num_this_wins = pairs[group_idx][inner_idx];
-        let mut num_other_wins = pairs[group_idx][1 - inner_idx];
+        let mut this_score = score_pairs[group_idx][side];
+        let mut other_score = score_pairs[group_idx][1 - side];
 
-        if num_this_wins + 1 == num_wins {
-            num_this_wins += 1;
+        if this_score + 1 == dest_score {
+            this_score += 1;
         } else {
-            num_other_wins += 1;
+            other_score += 1;
         }
 
-        if num_this_wins != num_wins || num_other_wins > num_wins {
+        if this_score != dest_score || other_score > dest_score {
             return Mint::new(0);
         }
 
         let mut prod_p = inv2;
-        let mut basic_cand_cnt = 1 + (num_other_wins == num_wins) as usize;
+        let mut basic_cand_cnt = 1 + (other_score == dest_score) as usize;
         let mut extra_cand_cnt = 0;
 
-        if num_wins == max_a + 1 {
-            basic_cand_cnt += count_by_group[0];
-            extra_cand_cnt += count_by_group[1] + count_by_group[2];
-        } else {
-            prod_p *= Mint::new(0).pow(count_by_group[0])
-                * inv2.pow(count_by_group[1] + count_by_group[2]);
-            basic_cand_cnt += 2 * count_by_group[1] + count_by_group[2] + count_by_group[3];
-            extra_cand_cnt += count_by_group[4];
+        for (cnt, contribution) in izip!(count_by_group, contributions[dest_score as usize]) {
+            match contribution {
+                Contribution::Basic { p, k } => {
+                    prod_p *= p.pow(cnt);
+                    basic_cand_cnt += k * cnt;
+                }
+                Contribution::Extra => extra_cand_cnt += cnt,
+            }
         }
 
         prod_p
@@ -84,8 +120,8 @@ fn main() {
     };
 
     let mut probabilities = vec![[Mint::new(0); 2]; 6];
-    for (num_wins, group_idx, inner_idx) in iproduct!(max_a..=max_a + 1, 0..6, 0..2) {
-        probabilities[group_idx][inner_idx] += calc_probability(num_wins, group_idx, inner_idx);
+    for (dest_score, group_idx, side) in iproduct!([0, 1], 0..6, 0..2) {
+        probabilities[group_idx][side] += calc_probability(dest_score, group_idx, side);
     }
 
     let output = (0..n)
@@ -93,7 +129,7 @@ fn main() {
             let group_idx = group_by_pair[pair_idx];
             let mut prob_pair = probabilities[group_idx];
             let offset = 2 * pair_idx;
-            if bb[offset] < bb[offset + 1] {
+            if aa[offset] < aa[offset + 1] {
                 prob_pair.reverse();
             }
             prob_pair
