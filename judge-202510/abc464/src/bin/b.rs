@@ -1,4 +1,4 @@
-use itertools::Itertools;
+use itertools::{Itertools, iproduct};
 use proconio::{input, marker::Chars};
 
 fn main() {
@@ -7,13 +7,15 @@ fn main() {
         ccc: [Chars; h],
     }
 
-    let is_painted_row = |row: usize| (0..w).any(|col| ccc[row][col] == '#');
-    let is_painted_column = |col: usize| (0..h).any(|row| ccc[row][col] == '#');
-
-    let top = (0..h).find(|&row| is_painted_row(row)).unwrap();
-    let bottom = (0..h).rev().find(|&row| is_painted_row(row)).unwrap();
-    let left = (0..w).find(|&col| is_painted_column(col)).unwrap();
-    let right = (0..w).rev().find(|&col| is_painted_column(col)).unwrap();
+    let (mut top, mut bottom, mut left, mut right) = (h, 0, w, 0);
+    for (row, col) in iproduct!(0..h, 0..w) {
+        if ccc[row][col] == '#' {
+            top = top.min(row);
+            bottom = bottom.max(row);
+            left = left.min(col);
+            right = right.max(col);
+        }
+    }
 
     let output = (top..=bottom)
         .map(|row| (left..=right).map(|col| ccc[row][col]).collect::<String>())
