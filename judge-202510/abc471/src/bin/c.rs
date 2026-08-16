@@ -1,5 +1,6 @@
-use std::collections::BTreeSet;
+use std::cmp::Reverse;
 
+use itertools::chain;
 use proconio::input;
 
 fn main() {
@@ -8,32 +9,25 @@ fn main() {
         aa: [i64; n],
     }
 
-    let mut coords = aa.into_iter().collect::<BTreeSet<i64>>();
-    let mut x = 0;
+    let mut small = vec![];
+    let mut large = vec![];
+    for &a in &aa {
+        [&mut small, &mut large][(a >= 0) as usize].push(a);
+    }
+    small.sort_unstable();
+    large.sort_unstable_by_key(|&v| Reverse(v));
 
     let mut total = 0;
+    let mut x = 0;
     for _ in 0..n {
-        let prev = coords.range(..=x).next_back();
-        let next = coords.range(x..).next();
-        let nx = match (prev, next) {
-            (None, None) => break,
-            (None, Some(&next)) => next,
-            (Some(&prev), None) => prev,
-            (Some(&prev), Some(&next)) => {
-                let dist1 = prev.abs_diff(x);
-                let dist2 = next.abs_diff(x);
-                match dist1.cmp(&dist2) {
-                    std::cmp::Ordering::Less => prev,
-                    std::cmp::Ordering::Equal => prev,
-                    std::cmp::Ordering::Greater => next,
-                }
-            }
-        };
+        let next_x = *chain(small.last(), large.last())
+            .min_by_key(|candidate| candidate.abs_diff(x))
+            .unwrap();
 
-        total += x.abs_diff(nx);
+        total += next_x.abs_diff(x);
 
-        coords.remove(&nx);
-        x = nx;
+        [&mut small, &mut large][(next_x >= 0) as usize].pop();
+        x = next_x;
     }
 
     println!("{total}");
