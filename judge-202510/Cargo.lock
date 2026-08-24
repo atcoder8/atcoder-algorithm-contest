@@ -36,7 +36,7 @@ dependencies = [
  "memoise",
  "multimap",
  "multiversion",
- "nalgebra 0.34.1",
+ "nalgebra 0.34.2",
  "ndarray",
  "num",
  "num-bigint",
@@ -48,15 +48,15 @@ dependencies = [
  "num-traits",
  "omniswap",
  "once_cell",
- "ordered-float 5.1.0",
+ "ordered-float 5.5.0",
  "pathfinding",
  "permutohedron",
  "petgraph",
  "primal",
  "proconio 0.5.0",
- "rand 0.9.2",
+ "rand 0.9.5",
  "rand_chacha 0.9.0",
- "rand_core 0.9.3",
+ "rand_core 0.9.5",
  "rand_distr 0.5.1",
  "rand_hc",
  "rand_pcg",
@@ -65,14 +65,14 @@ dependencies = [
  "recur-fn",
  "regex",
  "rpds",
- "rustc-hash 2.1.1",
+ "rustc-hash 2.1.3",
  "smallvec",
  "static_assertions",
  "statrs",
  "superslice",
  "tap",
  "text_io",
- "thiserror 2.0.17",
+ "thiserror 2.0.20",
  "varisat",
 ]
 
@@ -110,7 +110,7 @@ dependencies = [
  "memoise",
  "multimap",
  "multiversion",
- "nalgebra 0.34.1",
+ "nalgebra 0.34.2",
  "ndarray",
  "num",
  "num-bigint",
@@ -122,15 +122,15 @@ dependencies = [
  "num-traits",
  "omniswap",
  "once_cell",
- "ordered-float 5.1.0",
+ "ordered-float 5.5.0",
  "pathfinding",
  "permutohedron",
  "petgraph",
  "primal",
  "proconio 0.5.0",
- "rand 0.9.2",
+ "rand 0.9.5",
  "rand_chacha 0.9.0",
- "rand_core 0.9.3",
+ "rand_core 0.9.5",
  "rand_distr 0.5.1",
  "rand_hc",
  "rand_pcg",
@@ -139,14 +139,14 @@ dependencies = [
  "recur-fn",
  "regex",
  "rpds",
- "rustc-hash 2.1.1",
+ "rustc-hash 2.1.3",
  "smallvec",
  "static_assertions",
  "statrs",
  "superslice",
  "tap",
  "text_io",
- "thiserror 2.0.17",
+ "thiserror 2.0.20",
  "varisat",
 ]
 
@@ -184,7 +184,7 @@ dependencies = [
  "memoise",
  "multimap",
  "multiversion",
- "nalgebra 0.34.1",
+ "nalgebra 0.34.2",
  "ndarray",
  "num",
  "num-bigint",
@@ -196,15 +196,15 @@ dependencies = [
  "num-traits",
  "omniswap",
  "once_cell",
- "ordered-float 5.1.0",
+ "ordered-float 5.5.0",
  "pathfinding",
  "permutohedron",
  "petgraph",
  "primal",
  "proconio 0.5.0",
- "rand 0.9.2",
+ "rand 0.9.5",
  "rand_chacha 0.9.0",
- "rand_core 0.9.3",
+ "rand_core 0.9.5",
  "rand_distr 0.5.1",
  "rand_hc",
  "rand_pcg",
@@ -213,14 +213,14 @@ dependencies = [
  "recur-fn",
  "regex",
  "rpds",
- "rustc-hash 2.1.1",
+ "rustc-hash 2.1.3",
  "smallvec",
  "static_assertions",
  "statrs",
  "superslice",
  "tap",
  "text_io",
- "thiserror 2.0.17",
+ "thiserror 2.0.20",
  "varisat",
 ]
 
@@ -258,7 +258,7 @@ dependencies = [
  "memoise",
  "multimap",
  "multiversion",
- "nalgebra 0.34.1",
+ "nalgebra 0.34.2",
  "ndarray",
  "num",
  "num-bigint",
@@ -270,15 +270,15 @@ dependencies = [
  "num-traits",
  "omniswap",
  "once_cell",
- "ordered-float 5.1.0",
+ "ordered-float 5.5.0",
  "pathfinding",
  "permutohedron",
  "petgraph",
  "primal",
  "proconio 0.5.0",
- "rand 0.9.2",
+ "rand 0.9.5",
  "rand_chacha 0.9.0",
- "rand_core 0.9.3",
+ "rand_core 0.9.5",
  "rand_distr 0.5.1",
  "rand_hc",
  "rand_pcg",
@@ -287,14 +287,14 @@ dependencies = [
  "recur-fn",
  "regex",
  "rpds",
- "rustc-hash 2.1.1",
+ "rustc-hash 2.1.3",
  "smallvec",
  "static_assertions",
  "statrs",
  "superslice",
  "tap",
  "text_io",
- "thiserror 2.0.17",
+ "thiserror 2.0.20",
  "varisat",
 ]
 
@@ -332,7 +332,7 @@ dependencies = [
  "memoise",
  "multimap",
  "multiversion",
- "nalgebra 0.34.1",
+ "nalgebra 0.34.2",
  "ndarray",
  "num",
  "num-bigint",
@@ -344,15 +344,15 @@ dependencies = [
  "num-traits",
  "omniswap",
  "once_cell",
- "ordered-float 5.1.0",
+ "ordered-float 5.5.0",
  "pathfinding",
  "permutohedron",
  "petgraph",
  "primal",
  "proconio 0.5.0",
- "rand 0.9.2",
+ "rand 0.9.5",
  "rand_chacha 0.9.0",
- "rand_core 0.9.3",
+ "rand_core 0.9.5",
  "rand_distr 0.5.1",
  "rand_hc",
  "rand_pcg",
@@ -361,14 +361,14 @@ dependencies = [
  "recur-fn",
  "regex",
  "rpds",
- "rustc-hash 2.1.1",
+ "rustc-hash 2.1.3",
  "smallvec",
  "static_assertions",
  "statrs",
  "superslice",
  "tap",
  "text_io",
- "thiserror 2.0.17",
+ "thiserror 2.0.20",
  "varisat",
 ]
 
@@ -406,7 +406,7 @@ dependencies = [
  "memoise",
  "multimap",
  "multiversion",
- "nalgebra 0.34.1",
+ "nalgebra 0.34.2",
  "ndarray",
  "num",
  "num-bigint",
@@ -418,15 +418,15 @@ dependencies = [
  "num-traits",
  "omniswap",
  "once_cell",
- "ordered-float 5.1.0",
+ "ordered-float 5.5.0",
  "pathfinding",
  "permutohedron",
  "petgraph",
  "primal",
  "proconio 0.5.0",
- "rand 0.9.2",
+ "rand 0.9.5",
  "rand_chacha 0.9.0",
- "rand_core 0.9.3",
+ "rand_core 0.9.5",
  "rand_distr 0.5.1",
  "rand_hc",
  "rand_pcg",
@@ -435,14 +435,14 @@ dependencies = [
  "recur-fn",
  "regex",
  "rpds",
- "rustc-hash 2.1.1",
+ "rustc-hash 2.1.3",
  "smallvec",
  "static_assertions",
  "statrs",
  "superslice",
  "tap",
  "text_io",
- "thiserror 2.0.17",
+ "thiserror 2.0.20",
  "varisat",
 ]
 
@@ -480,7 +480,7 @@ dependencies = [
  "memoise",
  "multimap",
  "multiversion",
- "nalgebra 0.34.1",
+ "nalgebra 0.34.2",
  "ndarray",
  "num",
  "num-bigint",
@@ -492,15 +492,15 @@ dependencies = [
  "num-traits",
  "omniswap",
  "once_cell",
- "ordered-float 5.1.0",
+ "ordered-float 5.5.0",
  "pathfinding",
  "permutohedron",
  "petgraph",
  "primal",
  "proconio 0.5.0",
- "rand 0.9.2",
+ "rand 0.9.5",
  "rand_chacha 0.9.0",
- "rand_core 0.9.3",
+ "rand_core 0.9.5",
  "rand_distr 0.5.1",
  "rand_hc",
  "rand_pcg",
@@ -509,14 +509,14 @@ dependencies = [
  "recur-fn",
  "regex",
  "rpds",
- "rustc-hash 2.1.1",
+ "rustc-hash 2.1.3",
  "smallvec",
  "static_assertions",
  "statrs",
  "superslice",
  "tap",
  "text_io",
- "thiserror 2.0.17",
+ "thiserror 2.0.20",
  "varisat",
 ]
 
@@ -554,7 +554,7 @@ dependencies = [
  "memoise",
  "multimap",
  "multiversion",
- "nalgebra 0.34.1",
+ "nalgebra 0.34.2",
  "ndarray",
  "num",
  "num-bigint",
@@ -566,15 +566,15 @@ dependencies = [
  "num-traits",
  "omniswap",
  "once_cell",
- "ordered-float 5.1.0",
+ "ordered-float 5.5.0",
  "pathfinding",
  "permutohedron",
  "petgraph",
  "primal",
  "proconio 0.5.0",
- "rand 0.9.2",
+ "rand 0.9.5",
  "rand_chacha 0.9.0",
- "rand_core 0.9.3",
+ "rand_core 0.9.5",
  "rand_distr 0.5.1",
  "rand_hc",
  "rand_pcg",
@@ -583,14 +583,14 @@ dependencies = [
  "recur-fn",
  "regex",
  "rpds",
- "rustc-hash 2.1.1",
+ "rustc-hash 2.1.3",
  "smallvec",
  "static_assertions",
  "statrs",
  "superslice",
  "tap",
  "text_io",
- "thiserror 2.0.17",
+ "thiserror 2.0.20",
  "varisat",
 ]
 
@@ -628,7 +628,7 @@ dependencies = [
  "memoise",
  "multimap",
  "multiversion",
- "nalgebra 0.34.1",
+ "nalgebra 0.34.2",
  "ndarray",
  "num",
  "num-bigint",
@@ -640,15 +640,15 @@ dependencies = [
  "num-traits",
  "omniswap",
  "once_cell",
- "ordered-float 5.1.0",
+ "ordered-float 5.5.0",
  "pathfinding",
  "permutohedron",
  "petgraph",
  "primal",
  "proconio 0.5.0",
- "rand 0.9.2",
+ "rand 0.9.5",
  "rand_chacha 0.9.0",
- "rand_core 0.9.3",
+ "rand_core 0.9.5",
  "rand_distr 0.5.1",
  "rand_hc",
  "rand_pcg",
@@ -657,14 +657,14 @@ dependencies = [
  "recur-fn",
  "regex",
  "rpds",
- "rustc-hash 2.1.1",
+ "rustc-hash 2.1.3",
  "smallvec",
  "static_assertions",
  "statrs",
  "superslice",
  "tap",
  "text_io",
- "thiserror 2.0.17",
+ "thiserror 2.0.20",
  "varisat",
 ]
 
@@ -702,7 +702,7 @@ dependencies = [
  "memoise",
  "multimap",
  "multiversion",
- "nalgebra 0.34.1",
+ "nalgebra 0.34.2",
  "ndarray",
  "num",
  "num-bigint",
@@ -714,15 +714,15 @@ dependencies = [
  "num-traits",
  "omniswap",
  "once_cell",
- "ordered-float 5.1.0",
+ "ordered-float 5.5.0",
  "pathfinding",
  "permutohedron",
  "petgraph",
  "primal",
  "proconio 0.5.0",
- "rand 0.9.2",
+ "rand 0.9.5",
  "rand_chacha 0.9.0",
- "rand_core 0.9.3",
+ "rand_core 0.9.5",
  "rand_distr 0.5.1",
  "rand_hc",
  "rand_pcg",
@@ -731,14 +731,14 @@ dependencies = [
  "recur-fn",
  "regex",
  "rpds",
- "rustc-hash 2.1.1",
+ "rustc-hash 2.1.3",
  "smallvec",
  "static_assertions",
  "statrs",
  "superslice",
  "tap",
  "text_io",
- "thiserror 2.0.17",
+ "thiserror 2.0.20",
  "varisat",
 ]
 
@@ -776,7 +776,7 @@ dependencies = [
  "memoise",
  "multimap",
  "multiversion",
- "nalgebra 0.34.1",
+ "nalgebra 0.34.2",
  "ndarray",
  "num",
  "num-bigint",
@@ -788,15 +788,15 @@ dependencies = [
  "num-traits",
  "omniswap",
  "once_cell",
- "ordered-float 5.1.0",
+ "ordered-float 5.5.0",
  "pathfinding",
  "permutohedron",
  "petgraph",
  "primal",
  "proconio 0.5.0",
- "rand 0.9.2",
+ "rand 0.9.5",
  "rand_chacha 0.9.0",
- "rand_core 0.9.3",
+ "rand_core 0.9.5",
  "rand_distr 0.5.1",
  "rand_hc",
  "rand_pcg",
@@ -805,14 +805,14 @@ dependencies = [
  "recur-fn",
  "regex",
  "rpds",
- "rustc-hash 2.1.1",
+ "rustc-hash 2.1.3",
  "smallvec",
  "static_assertions",
  "statrs",
  "superslice",
  "tap",
  "text_io",
- "thiserror 2.0.17",
+ "thiserror 2.0.20",
  "varisat",
 ]
 
@@ -850,7 +850,7 @@ dependencies = [
  "memoise",
  "multimap",
  "multiversion",
- "nalgebra 0.34.1",
+ "nalgebra 0.34.2",
  "ndarray",
  "num",
  "num-bigint",
@@ -862,15 +862,15 @@ dependencies = [
  "num-traits",
  "omniswap",
  "once_cell",
- "ordered-float 5.1.0",
+ "ordered-float 5.5.0",
  "pathfinding",
  "permutohedron",
  "petgraph",
  "primal",
  "proconio 0.5.0",
- "rand 0.9.2",
+ "rand 0.9.5",
  "rand_chacha 0.9.0",
- "rand_core 0.9.3",
+ "rand_core 0.9.5",
  "rand_distr 0.5.1",
  "rand_hc",
  "rand_pcg",
@@ -879,14 +879,14 @@ dependencies = [
  "recur-fn",
  "regex",
  "rpds",
- "rustc-hash 2.1.1",
+ "rustc-hash 2.1.3",
  "smallvec",
  "static_assertions",
  "statrs",
  "superslice",
  "tap",
  "text_io",
- "thiserror 2.0.17",
+ "thiserror 2.0.20",
  "varisat",
 ]
 
@@ -924,7 +924,7 @@ dependencies = [
  "memoise",
  "multimap",
  "multiversion",
- "nalgebra 0.34.1",
+ "nalgebra 0.34.2",
  "ndarray",
  "num",
  "num-bigint",
@@ -936,15 +936,15 @@ dependencies = [
  "num-traits",
  "omniswap",
  "once_cell",
- "ordered-float 5.1.0",
+ "ordered-float 5.5.0",
  "pathfinding",
  "permutohedron",
  "petgraph",
  "primal",
  "proconio 0.5.0",
- "rand 0.9.2",
+ "rand 0.9.5",
  "rand_chacha 0.9.0",
- "rand_core 0.9.3",
+ "rand_core 0.9.5",
  "rand_distr 0.5.1",
  "rand_hc",
  "rand_pcg",
@@ -953,14 +953,14 @@ dependencies = [
  "recur-fn",
  "regex",
  "rpds",
- "rustc-hash 2.1.1",
+ "rustc-hash 2.1.3",
  "smallvec",
  "static_assertions",
  "statrs",
  "superslice",
  "tap",
  "text_io",
- "thiserror 2.0.17",
+ "thiserror 2.0.20",
  "varisat",
 ]
 
@@ -998,7 +998,7 @@ dependencies = [
  "memoise",
  "multimap",
  "multiversion",
- "nalgebra 0.34.1",
+ "nalgebra 0.34.2",
  "ndarray",
  "num",
  "num-bigint",
@@ -1010,15 +1010,15 @@ dependencies = [
  "num-traits",
  "omniswap",
  "once_cell",
- "ordered-float 5.1.0",
+ "ordered-float 5.5.0",
  "pathfinding",
  "permutohedron",
  "petgraph",
  "primal",
  "proconio 0.5.0",
- "rand 0.9.2",
+ "rand 0.9.5",
  "rand_chacha 0.9.0",
- "rand_core 0.9.3",
+ "rand_core 0.9.5",
  "rand_distr 0.5.1",
  "rand_hc",
  "rand_pcg",
@@ -1027,14 +1027,14 @@ dependencies = [
  "recur-fn",
  "regex",
  "rpds",
- "rustc-hash 2.1.1",
+ "rustc-hash 2.1.3",
  "smallvec",
  "static_assertions",
  "statrs",
  "superslice",
  "tap",
  "text_io",
- "thiserror 2.0.17",
+ "thiserror 2.0.20",
  "varisat",
 ]
 
@@ -1072,7 +1072,7 @@ dependencies = [
  "memoise",
  "multimap",
  "multiversion",
- "nalgebra 0.34.1",
+ "nalgebra 0.34.2",
  "ndarray",
  "num",
  "num-bigint",
@@ -1084,15 +1084,15 @@ dependencies = [
  "num-traits",
  "omniswap",
  "once_cell",
- "ordered-float 5.1.0",
+ "ordered-float 5.5.0",
  "pathfinding",
  "permutohedron",
  "petgraph",
  "primal",
  "proconio 0.5.0",
- "rand 0.9.2",
+ "rand 0.9.5",
  "rand_chacha 0.9.0",
- "rand_core 0.9.3",
+ "rand_core 0.9.5",
  "rand_distr 0.5.1",
  "rand_hc",
  "rand_pcg",
@@ -1101,14 +1101,14 @@ dependencies = [
  "recur-fn",
  "regex",
  "rpds",
- "rustc-hash 2.1.1",
+ "rustc-hash 2.1.3",
  "smallvec",
  "static_assertions",
  "statrs",
  "superslice",
  "tap",
  "text_io",
- "thiserror 2.0.17",
+ "thiserror 2.0.20",
  "varisat",
 ]
 
@@ -1146,7 +1146,7 @@ dependencies = [
  "memoise",
  "multimap",
  "multiversion",
- "nalgebra 0.34.1",
+ "nalgebra 0.34.2",
  "ndarray",
  "num",
  "num-bigint",
@@ -1158,15 +1158,15 @@ dependencies = [
  "num-traits",
  "omniswap",
  "once_cell",
- "ordered-float 5.1.0",
+ "ordered-float 5.5.0",
  "pathfinding",
  "permutohedron",
  "petgraph",
  "primal",
  "proconio 0.5.0",
- "rand 0.9.2",
+ "rand 0.9.5",
  "rand_chacha 0.9.0",
- "rand_core 0.9.3",
+ "rand_core 0.9.5",
  "rand_distr 0.5.1",
  "rand_hc",
  "rand_pcg",
@@ -1175,14 +1175,14 @@ dependencies = [
  "recur-fn",
  "regex",
  "rpds",
- "rustc-hash 2.1.1",
+ "rustc-hash 2.1.3",
  "smallvec",
  "static_assertions",
  "statrs",
  "superslice",
  "tap",
  "text_io",
- "thiserror 2.0.17",
+ "thiserror 2.0.20",
  "varisat",
 ]
 
@@ -1220,7 +1220,7 @@ dependencies = [
  "memoise",
  "multimap",
  "multiversion",
- "nalgebra 0.34.1",
+ "nalgebra 0.34.2",
  "ndarray",
  "num",
  "num-bigint",
@@ -1232,15 +1232,15 @@ dependencies = [
  "num-traits",
  "omniswap",
  "once_cell",
- "ordered-float 5.1.0",
+ "ordered-float 5.5.0",
  "pathfinding",
  "permutohedron",
  "petgraph",
  "primal",
  "proconio 0.5.0",
- "rand 0.9.2",
+ "rand 0.9.5",
  "rand_chacha 0.9.0",
- "rand_core 0.9.3",
+ "rand_core 0.9.5",
  "rand_distr 0.5.1",
  "rand_hc",
  "rand_pcg",
@@ -1249,14 +1249,14 @@ dependencies = [
  "recur-fn",
  "regex",
  "rpds",
- "rustc-hash 2.1.1",
+ "rustc-hash 2.1.3",
  "smallvec",
  "static_assertions",
  "statrs",
  "superslice",
  "tap",
  "text_io",
- "thiserror 2.0.17",
+ "thiserror 2.0.20",
  "varisat",
 ]
 
@@ -1294,7 +1294,7 @@ dependencies = [
  "memoise",
  "multimap",
  "multiversion",
- "nalgebra 0.34.1",
+ "nalgebra 0.34.2",
  "ndarray",
  "num",
  "num-bigint",
@@ -1306,15 +1306,15 @@ dependencies = [
  "num-traits",
  "omniswap",
  "once_cell",
- "ordered-float 5.1.0",
+ "ordered-float 5.5.0",
  "pathfinding",
  "permutohedron",
  "petgraph",
  "primal",
  "proconio 0.5.0",
- "rand 0.9.2",
+ "rand 0.9.5",
  "rand_chacha 0.9.0",
- "rand_core 0.9.3",
+ "rand_core 0.9.5",
  "rand_distr 0.5.1",
  "rand_hc",
  "rand_pcg",
@@ -1323,14 +1323,14 @@ dependencies = [
  "recur-fn",
  "regex",
  "rpds",
- "rustc-hash 2.1.1",
+ "rustc-hash 2.1.3",
  "smallvec",
  "static_assertions",
  "statrs",
  "superslice",
  "tap",
  "text_io",
- "thiserror 2.0.17",
+ "thiserror 2.0.20",
  "varisat",
 ]
 
@@ -1368,7 +1368,7 @@ dependencies = [
  "memoise",
  "multimap",
  "multiversion",
- "nalgebra 0.34.1",
+ "nalgebra 0.34.2",
  "ndarray",
  "num",
  "num-bigint",
@@ -1380,15 +1380,15 @@ dependencies = [
  "num-traits",
  "omniswap",
  "once_cell",
- "ordered-float 5.1.0",
+ "ordered-float 5.5.0",
  "pathfinding",
  "permutohedron",
  "petgraph",
  "primal",
  "proconio 0.5.0",
- "rand 0.9.2",
+ "rand 0.9.5",
  "rand_chacha 0.9.0",
- "rand_core 0.9.3",
+ "rand_core 0.9.5",
  "rand_distr 0.5.1",
  "rand_hc",
  "rand_pcg",
@@ -1397,14 +1397,14 @@ dependencies = [
  "recur-fn",
  "regex",
  "rpds",
- "rustc-hash 2.1.1",
+ "rustc-hash 2.1.3",
  "smallvec",
  "static_assertions",
  "statrs",
  "superslice",
  "tap",
  "text_io",
- "thiserror 2.0.17",
+ "thiserror 2.0.20",
  "varisat",
 ]
 
@@ -1442,7 +1442,7 @@ dependencies = [
  "memoise",
  "multimap",
  "multiversion",
- "nalgebra 0.34.1",
+ "nalgebra 0.34.2",
  "ndarray",
  "num",
  "num-bigint",
@@ -1454,15 +1454,15 @@ dependencies = [
  "num-traits",
  "omniswap",
  "once_cell",
- "ordered-float 5.1.0",
+ "ordered-float 5.5.0",
  "pathfinding",
  "permutohedron",
  "petgraph",
  "primal",
  "proconio 0.5.0",
- "rand 0.9.2",
+ "rand 0.9.5",
  "rand_chacha 0.9.0",
- "rand_core 0.9.3",
+ "rand_core 0.9.5",
  "rand_distr 0.5.1",
  "rand_hc",
  "rand_pcg",
@@ -1471,14 +1471,14 @@ dependencies = [
  "recur-fn",
  "regex",
  "rpds",
- "rustc-hash 2.1.1",
+ "rustc-hash 2.1.3",
  "smallvec",
  "static_assertions",
  "statrs",
  "superslice",
  "tap",
  "text_io",
- "thiserror 2.0.17",
+ "thiserror 2.0.20",
  "varisat",
 ]
 
@@ -1516,7 +1516,7 @@ dependencies = [
  "memoise",
  "multimap",
  "multiversion",
- "nalgebra 0.34.1",
+ "nalgebra 0.34.2",
  "ndarray",
  "num",
  "num-bigint",
@@ -1528,15 +1528,15 @@ dependencies = [
  "num-traits",
  "omniswap",
  "once_cell",
- "ordered-float 5.1.0",
+ "ordered-float 5.5.0",
  "pathfinding",
  "permutohedron",
  "petgraph",
  "primal",
  "proconio 0.5.0",
- "rand 0.9.2",
+ "rand 0.9.5",
  "rand_chacha 0.9.0",
- "rand_core 0.9.3",
+ "rand_core 0.9.5",
  "rand_distr 0.5.1",
  "rand_hc",
  "rand_pcg",
@@ -1545,14 +1545,14 @@ dependencies = [
  "recur-fn",
  "regex",
  "rpds",
- "rustc-hash 2.1.1",
+ "rustc-hash 2.1.3",
  "smallvec",
  "static_assertions",
  "statrs",
  "superslice",
  "tap",
  "text_io",
- "thiserror 2.0.17",
+ "thiserror 2.0.20",
  "varisat",
 ]
 
@@ -1590,7 +1590,7 @@ dependencies = [
  "memoise",
  "multimap",
  "multiversion",
- "nalgebra 0.34.1",
+ "nalgebra 0.34.2",
  "ndarray",
  "num",
  "num-bigint",
@@ -1602,15 +1602,15 @@ dependencies = [
  "num-traits",
  "omniswap",
  "once_cell",
- "ordered-float 5.1.0",
+ "ordered-float 5.5.0",
  "pathfinding",
  "permutohedron",
  "petgraph",
  "primal",
  "proconio 0.5.0",
- "rand 0.9.2",
+ "rand 0.9.5",
  "rand_chacha 0.9.0",
- "rand_core 0.9.3",
+ "rand_core 0.9.5",
  "rand_distr 0.5.1",
  "rand_hc",
  "rand_pcg",
@@ -1619,14 +1619,14 @@ dependencies = [
  "recur-fn",
  "regex",
  "rpds",
- "rustc-hash 2.1.1",
+ "rustc-hash 2.1.3",
  "smallvec",
  "static_assertions",
  "statrs",
  "superslice",
  "tap",
  "text_io",
- "thiserror 2.0.17",
+ "thiserror 2.0.20",
  "varisat",
 ]
 
@@ -1664,7 +1664,7 @@ dependencies = [
  "memoise",
  "multimap",
  "multiversion",
- "nalgebra 0.34.1",
+ "nalgebra 0.34.2",
  "ndarray",
  "num",
  "num-bigint",
@@ -1676,15 +1676,15 @@ dependencies = [
  "num-traits",
  "omniswap",
  "once_cell",
- "ordered-float 5.1.0",
+ "ordered-float 5.5.0",
  "pathfinding",
  "permutohedron",
  "petgraph",
  "primal",
  "proconio 0.5.0",
- "rand 0.9.2",
+ "rand 0.9.5",
  "rand_chacha 0.9.0",
- "rand_core 0.9.3",
+ "rand_core 0.9.5",
  "rand_distr 0.5.1",
  "rand_hc",
  "rand_pcg",
@@ -1693,14 +1693,14 @@ dependencies = [
  "recur-fn",
  "regex",
  "rpds",
- "rustc-hash 2.1.1",
+ "rustc-hash 2.1.3",
  "smallvec",
  "static_assertions",
  "statrs",
  "superslice",
  "tap",
  "text_io",
- "thiserror 2.0.17",
+ "thiserror 2.0.20",
  "varisat",
 ]
 
@@ -1738,7 +1738,7 @@ dependencies = [
  "memoise",
  "multimap",
  "multiversion",
- "nalgebra 0.34.1",
+ "nalgebra 0.34.2",
  "ndarray",
  "num",
  "num-bigint",
@@ -1750,15 +1750,15 @@ dependencies = [
  "num-traits",
  "omniswap",
  "once_cell",
- "ordered-float 5.1.0",
+ "ordered-float 5.5.0",
  "pathfinding",
  "permutohedron",
  "petgraph",
  "primal",
  "proconio 0.5.0",
- "rand 0.9.2",
+ "rand 0.9.5",
  "rand_chacha 0.9.0",
- "rand_core 0.9.3",
+ "rand_core 0.9.5",
  "rand_distr 0.5.1",
  "rand_hc",
  "rand_pcg",
@@ -1767,14 +1767,14 @@ dependencies = [
  "recur-fn",
  "regex",
  "rpds",
- "rustc-hash 2.1.1",
+ "rustc-hash 2.1.3",
  "smallvec",
  "static_assertions",
  "statrs",
  "superslice",
  "tap",
  "text_io",
- "thiserror 2.0.17",
+ "thiserror 2.0.20",
  "varisat",
 ]
 
@@ -1812,7 +1812,7 @@ dependencies = [
  "memoise",
  "multimap",
  "multiversion",
- "nalgebra 0.34.1",
+ "nalgebra 0.34.2",
  "ndarray",
  "num",
  "num-bigint",
@@ -1824,15 +1824,15 @@ dependencies = [
  "num-traits",
  "omniswap",
  "once_cell",
- "ordered-float 5.1.0",
+ "ordered-float 5.5.0",
  "pathfinding",
  "permutohedron",
  "petgraph",
  "primal",
  "proconio 0.5.0",
- "rand 0.9.2",
+ "rand 0.9.5",
  "rand_chacha 0.9.0",
- "rand_core 0.9.3",
+ "rand_core 0.9.5",
  "rand_distr 0.5.1",
  "rand_hc",
  "rand_pcg",
@@ -1841,14 +1841,14 @@ dependencies = [
  "recur-fn",
  "regex",
  "rpds",
- "rustc-hash 2.1.1",
+ "rustc-hash 2.1.3",
  "smallvec",
  "static_assertions",
  "statrs",
  "superslice",
  "tap",
  "text_io",
- "thiserror 2.0.17",
+ "thiserror 2.0.20",
  "varisat",
 ]
 
@@ -1886,7 +1886,7 @@ dependencies = [
  "memoise",
  "multimap",
  "multiversion",
- "nalgebra 0.34.1",
+ "nalgebra 0.34.2",
  "ndarray",
  "num",
  "num-bigint",
@@ -1898,15 +1898,15 @@ dependencies = [
  "num-traits",
  "omniswap",
  "once_cell",
- "ordered-float 5.1.0",
+ "ordered-float 5.5.0",
  "pathfinding",
  "permutohedron",
  "petgraph",
  "primal",
  "proconio 0.5.0",
- "rand 0.9.2",
+ "rand 0.9.5",
  "rand_chacha 0.9.0",
- "rand_core 0.9.3",
+ "rand_core 0.9.5",
  "rand_distr 0.5.1",
  "rand_hc",
  "rand_pcg",
@@ -1915,14 +1915,14 @@ dependencies = [
  "recur-fn",
  "regex",
  "rpds",
- "rustc-hash 2.1.1",
+ "rustc-hash 2.1.3",
  "smallvec",
  "static_assertions",
  "statrs",
  "superslice",
  "tap",
  "text_io",
- "thiserror 2.0.17",
+ "thiserror 2.0.20",
  "varisat",
 ]
 
@@ -1960,7 +1960,7 @@ dependencies = [
  "memoise",
  "multimap",
  "multiversion",
- "nalgebra 0.34.1",
+ "nalgebra 0.34.2",
  "ndarray",
  "num",
  "num-bigint",
@@ -1972,15 +1972,15 @@ dependencies = [
  "num-traits",
  "omniswap",
  "once_cell",
- "ordered-float 5.1.0",
+ "ordered-float 5.5.0",
  "pathfinding",
  "permutohedron",
  "petgraph",
  "primal",
  "proconio 0.5.0",
- "rand 0.9.2",
+ "rand 0.9.5",
  "rand_chacha 0.9.0",
- "rand_core 0.9.3",
+ "rand_core 0.9.5",
  "rand_distr 0.5.1",
  "rand_hc",
  "rand_pcg",
@@ -1989,14 +1989,14 @@ dependencies = [
  "recur-fn",
  "regex",
  "rpds",
- "rustc-hash 2.1.1",
+ "rustc-hash 2.1.3",
  "smallvec",
  "static_assertions",
  "statrs",
  "superslice",
  "tap",
  "text_io",
- "thiserror 2.0.17",
+ "thiserror 2.0.20",
  "varisat",
 ]
 
@@ -2034,7 +2034,7 @@ dependencies = [
  "memoise",
  "multimap",
  "multiversion",
- "nalgebra 0.34.1",
+ "nalgebra 0.34.2",
  "ndarray",
  "num",
  "num-bigint",
@@ -2046,15 +2046,15 @@ dependencies = [
  "num-traits",
  "omniswap",
  "once_cell",
- "ordered-float 5.1.0",
+ "ordered-float 5.5.0",
  "pathfinding",
  "permutohedron",
  "petgraph",
  "primal",
  "proconio 0.5.0",
- "rand 0.9.2",
+ "rand 0.9.5",
  "rand_chacha 0.9.0",
- "rand_core 0.9.3",
+ "rand_core 0.9.5",
  "rand_distr 0.5.1",
  "rand_hc",
  "rand_pcg",
@@ -2063,14 +2063,14 @@ dependencies = [
  "recur-fn",
  "regex",
  "rpds",
- "rustc-hash 2.1.1",
+ "rustc-hash 2.1.3",
  "smallvec",
  "static_assertions",
  "statrs",
  "superslice",
  "tap",
  "text_io",
- "thiserror 2.0.17",
+ "thiserror 2.0.20",
  "varisat",
 ]
 
@@ -2108,7 +2108,7 @@ dependencies = [
  "memoise",
  "multimap",
  "multiversion",
- "nalgebra 0.34.1",
+ "nalgebra 0.34.2",
  "ndarray",
  "num",
  "num-bigint",
@@ -2120,15 +2120,15 @@ dependencies = [
  "num-traits",
  "omniswap",
  "once_cell",
- "ordered-float 5.1.0",
+ "ordered-float 5.5.0",
  "pathfinding",
  "permutohedron",
  "petgraph",
  "primal",
  "proconio 0.5.0",
- "rand 0.9.2",
+ "rand 0.9.5",
  "rand_chacha 0.9.0",
- "rand_core 0.9.3",
+ "rand_core 0.9.5",
  "rand_distr 0.5.1",
  "rand_hc",
  "rand_pcg",
@@ -2137,14 +2137,14 @@ dependencies = [
  "recur-fn",
  "regex",
  "rpds",
- "rustc-hash 2.1.1",
+ "rustc-hash 2.1.3",
  "smallvec",
  "static_assertions",
  "statrs",
  "superslice",
  "tap",
  "text_io",
- "thiserror 2.0.17",
+ "thiserror 2.0.20",
  "varisat",
 ]
 
@@ -2182,7 +2182,7 @@ dependencies = [
  "memoise",
  "multimap",
  "multiversion",
- "nalgebra 0.34.1",
+ "nalgebra 0.34.2",
  "ndarray",
  "num",
  "num-bigint",
@@ -2194,15 +2194,15 @@ dependencies = [
  "num-traits",
  "omniswap",
  "once_cell",
- "ordered-float 5.1.0",
+ "ordered-float 5.5.0",
  "pathfinding",
  "permutohedron",
  "petgraph",
  "primal",
  "proconio 0.5.0",
- "rand 0.9.2",
+ "rand 0.9.5",
  "rand_chacha 0.9.0",
- "rand_core 0.9.3",
+ "rand_core 0.9.5",
  "rand_distr 0.5.1",
  "rand_hc",
  "rand_pcg",
@@ -2211,14 +2211,14 @@ dependencies = [
  "recur-fn",
  "regex",
  "rpds",
- "rustc-hash 2.1.1",
+ "rustc-hash 2.1.3",
  "smallvec",
  "static_assertions",
  "statrs",
  "superslice",
  "tap",
  "text_io",
- "thiserror 2.0.17",
+ "thiserror 2.0.20",
  "varisat",
 ]
 
@@ -2256,7 +2256,7 @@ dependencies = [
  "memoise",
  "multimap",
  "multiversion",
- "nalgebra 0.34.1",
+ "nalgebra 0.34.2",
  "ndarray",
  "num",
  "num-bigint",
@@ -2268,15 +2268,15 @@ dependencies = [
  "num-traits",
  "omniswap",
  "once_cell",
- "ordered-float 5.1.0",
+ "ordered-float 5.5.0",
  "pathfinding",
  "permutohedron",
  "petgraph",
  "primal",
  "proconio 0.5.0",
- "rand 0.9.2",
+ "rand 0.9.5",
  "rand_chacha 0.9.0",
- "rand_core 0.9.3",
+ "rand_core 0.9.5",
  "rand_distr 0.5.1",
  "rand_hc",
  "rand_pcg",
@@ -2285,162 +2285,14 @@ dependencies = [
  "recur-fn",
  "regex",
  "rpds",
- "rustc-hash 2.1.1",
+ "rustc-hash 2.1.3",
  "smallvec",
  "static_assertions",
  "statrs",
  "superslice",
  "tap",
  "text_io",
- "thiserror 2.0.17",
- "varisat",
-]
-
-[[package]]
-name = "abc471"
-version = "0.1.0"
-dependencies = [
- "ac-library-rs",
- "alga",
- "amplify",
- "amplify_derive",
- "amplify_num",
- "argio",
- "ascii",
- "az",
- "bitset-fixed",
- "bitvec",
- "bstr",
- "btreemultimap",
- "counter",
- "easy-ext",
- "either",
- "fixedbitset",
- "getrandom 0.3.4",
- "glidesort",
- "hashbag",
- "im-rc",
- "indexing",
- "indexmap",
- "itertools",
- "itertools-num",
- "lazy_static",
- "libm",
- "maplit",
- "memoise",
- "multimap",
- "multiversion",
- "nalgebra 0.34.1",
- "ndarray",
- "num",
- "num-bigint",
- "num-complex 0.4.6",
- "num-derive",
- "num-integer",
- "num-iter",
- "num-rational",
- "num-traits",
- "omniswap",
- "once_cell",
- "ordered-float 5.1.0",
- "pathfinding",
- "permutohedron",
- "petgraph",
- "primal",
- "proconio 0.5.0",
- "rand 0.9.2",
- "rand_chacha 0.9.0",
- "rand_core 0.9.3",
- "rand_distr 0.5.1",
- "rand_hc",
- "rand_pcg",
- "rand_xorshift",
- "rand_xoshiro 0.7.0",
- "recur-fn",
- "regex",
- "rpds",
- "rustc-hash 2.1.1",
- "smallvec",
- "static_assertions",
- "statrs",
- "superslice",
- "tap",
- "text_io",
- "thiserror 2.0.17",
- "varisat",
-]
-
-[[package]]
-name = "abc472"
-version = "0.1.0"
-dependencies = [
- "ac-library-rs",
- "alga",
- "amplify",
- "amplify_derive",
- "amplify_num",
- "argio",
- "ascii",
- "az",
- "bitset-fixed",
- "bitvec",
- "bstr",
- "btreemultimap",
- "counter",
- "easy-ext",
- "either",
- "fixedbitset",
- "getrandom 0.3.4",
- "glidesort",
- "hashbag",
- "im-rc",
- "indexing",
- "indexmap",
- "itertools",
- "itertools-num",
- "lazy_static",
- "libm",
- "maplit",
- "memoise",
- "multimap",
- "multiversion",
- "nalgebra 0.34.1",
- "ndarray",
- "num",
- "num-bigint",
- "num-complex 0.4.6",
- "num-derive",
- "num-integer",
- "num-iter",
- "num-rational",
- "num-traits",
- "omniswap",
- "once_cell",
- "ordered-float 5.1.0",
- "pathfinding",
- "permutohedron",
- "petgraph",
- "primal",
- "proconio 0.5.0",
- "rand 0.9.2",
- "rand_chacha 0.9.0",
- "rand_core 0.9.3",
- "rand_distr 0.5.1",
- "rand_hc",
- "rand_pcg",
- "rand_xorshift",
- "rand_xoshiro 0.7.0",
- "recur-fn",
- "regex",
- "rpds",
- "rustc-hash 2.1.1",
- "smallvec",
- "static_assertions",
- "statrs",
- "superslice",
- "tap",
- "text_io",
- "thiserror 2.0.17",
+ "thiserror 2.0.20",
  "varisat",
 ]
 
@@ -2478,7 +2330,7 @@ dependencies = [
  "memoise",
  "multimap",
  "multiversion",
- "nalgebra 0.34.1",
+ "nalgebra 0.34.2",
  "ndarray",
  "num",
  "num-bigint",
@@ -2490,15 +2342,15 @@ dependencies = [
  "num-traits",
  "omniswap",
  "once_cell",
- "ordered-float 5.1.0",
+ "ordered-float 5.5.0",
  "pathfinding",
  "permutohedron",
  "petgraph",
  "primal",
  "proconio 0.5.0",
- "rand 0.9.2",
+ "rand 0.9.5",
  "rand_chacha 0.9.0",
- "rand_core 0.9.3",
+ "rand_core 0.9.5",
  "rand_distr 0.5.1",
  "rand_hc",
  "rand_pcg",
@@ -2507,14 +2359,14 @@ dependencies = [
  "recur-fn",
  "regex",
  "rpds",
- "rustc-hash 2.1.1",
+ "rustc-hash 2.1.3",
  "smallvec",
  "static_assertions",
  "statrs",
  "superslice",
  "tap",
  "text_io",
- "thiserror 2.0.17",
+ "thiserror 2.0.20",
  "varisat",
 ]
 
@@ -2552,7 +2404,7 @@ dependencies = [
  "memoise",
  "multimap",
  "multiversion",
- "nalgebra 0.34.1",
+ "nalgebra 0.34.2",
  "ndarray",
  "num",
  "num-bigint",
@@ -2564,15 +2416,15 @@ dependencies = [
  "num-traits",
  "omniswap",
  "once_cell",
- "ordered-float 5.1.0",
+ "ordered-float 5.5.0",
  "pathfinding",
  "permutohedron",
  "petgraph",
  "primal",
  "proconio 0.5.0",
- "rand 0.9.2",
+ "rand 0.9.5",
  "rand_chacha 0.9.0",
- "rand_core 0.9.3",
+ "rand_core 0.9.5",
  "rand_distr 0.5.1",
  "rand_hc",
  "rand_pcg",
@@ -2581,14 +2433,162 @@ dependencies = [
  "recur-fn",
  "regex",
  "rpds",
- "rustc-hash 2.1.1",
+ "rustc-hash 2.1.3",
  "smallvec",
  "static_assertions",
  "statrs",
  "superslice",
  "tap",
  "text_io",
- "thiserror 2.0.17",
+ "thiserror 2.0.20",
+ "varisat",
+]
+
+[[package]]
+name = "abc471"
+version = "0.1.0"
+dependencies = [
+ "ac-library-rs",
+ "alga",
+ "amplify",
+ "amplify_derive",
+ "amplify_num",
+ "argio",
+ "ascii",
+ "az",
+ "bitset-fixed",
+ "bitvec",
+ "bstr",
+ "btreemultimap",
+ "counter",
+ "easy-ext",
+ "either",
+ "fixedbitset",
+ "getrandom 0.3.4",
+ "glidesort",
+ "hashbag",
+ "im-rc",
+ "indexing",
+ "indexmap",
+ "itertools",
+ "itertools-num",
+ "lazy_static",
+ "libm",
+ "maplit",
+ "memoise",
+ "multimap",
+ "multiversion",
+ "nalgebra 0.34.2",
+ "ndarray",
+ "num",
+ "num-bigint",
+ "num-complex 0.4.6",
+ "num-derive",
+ "num-integer",
+ "num-iter",
+ "num-rational",
+ "num-traits",
+ "omniswap",
+ "once_cell",
+ "ordered-float 5.5.0",
+ "pathfinding",
+ "permutohedron",
+ "petgraph",
+ "primal",
+ "proconio 0.5.0",
+ "rand 0.9.5",
+ "rand_chacha 0.9.0",
+ "rand_core 0.9.5",
+ "rand_distr 0.5.1",
+ "rand_hc",
+ "rand_pcg",
+ "rand_xorshift",
+ "rand_xoshiro 0.7.0",
+ "recur-fn",
+ "regex",
+ "rpds",
+ "rustc-hash 2.1.3",
+ "smallvec",
+ "static_assertions",
+ "statrs",
+ "superslice",
+ "tap",
+ "text_io",
+ "thiserror 2.0.20",
+ "varisat",
+]
+
+[[package]]
+name = "abc472"
+version = "0.1.0"
+dependencies = [
+ "ac-library-rs",
+ "alga",
+ "amplify",
+ "amplify_derive",
+ "amplify_num",
+ "argio",
+ "ascii",
+ "az",
+ "bitset-fixed",
+ "bitvec",
+ "bstr",
+ "btreemultimap",
+ "counter",
+ "easy-ext",
+ "either",
+ "fixedbitset",
+ "getrandom 0.3.4",
+ "glidesort",
+ "hashbag",
+ "im-rc",
+ "indexing",
+ "indexmap",
+ "itertools",
+ "itertools-num",
+ "lazy_static",
+ "libm",
+ "maplit",
+ "memoise",
+ "multimap",
+ "multiversion",
+ "nalgebra 0.34.2",
+ "ndarray",
+ "num",
+ "num-bigint",
+ "num-complex 0.4.6",
+ "num-derive",
+ "num-integer",
+ "num-iter",
+ "num-rational",
+ "num-traits",
+ "omniswap",
+ "once_cell",
+ "ordered-float 5.5.0",
+ "pathfinding",
+ "permutohedron",
+ "petgraph",
+ "primal",
+ "proconio 0.5.0",
+ "rand 0.9.5",
+ "rand_chacha 0.9.0",
+ "rand_core 0.9.5",
+ "rand_distr 0.5.1",
+ "rand_hc",
+ "rand_pcg",
+ "rand_xorshift",
+ "rand_xoshiro 0.7.0",
+ "recur-fn",
+ "regex",
+ "rpds",
+ "rustc-hash 2.1.3",
+ "smallvec",
+ "static_assertions",
+ "statrs",
+ "superslice",
+ "tap",
+ "text_io",
+ "thiserror 2.0.20",
  "varisat",
 ]
 
@@ -2600,9 +2600,9 @@ checksum = "f224825847080e387f2f23822f307f5b0e41f3f9d70076ea0452c7b032d603c9"
 
 [[package]]
 name = "aho-corasick"
-version = "1.1.4"
+version = "1.1.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ddd31a130427c27518df266943a5308ed92d4b226cc639f5a8f1002816174301"
+checksum = "c982642fa9e8606056828ee9a8505737230110bb1099153c79efe865c59d12ba"
 dependencies = [
  "memchr",
 ]
@@ -2627,10 +2627,10 @@ dependencies = [
  "amplify_derive",
  "amplify_num",
  "ascii",
- "getrandom 0.2.16",
+ "getrandom 0.2.17",
  "getrandom 0.3.4",
  "libc",
- "rand 0.9.2",
+ "rand 0.9.5",
  "stringly_conversions",
  "wasm-bindgen",
 ]
@@ -2669,9 +2669,9 @@ dependencies = [
 
 [[package]]
 name = "anyhow"
-version = "1.0.100"
+version = "1.0.104"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a23eb6b1614318a8071c9b2521f36b424b2c83db5eb3a0fead4a6c0809af6e61"
+checksum = "330a5ed07fa54e4702c9d6c4174f74427fc0ef6e214bbd677ae50a5099946470"
 
 [[package]]
 name = "approx"
@@ -2731,7 +2731,7 @@ dependencies = [
  "memoise",
  "multimap",
  "multiversion",
- "nalgebra 0.34.1",
+ "nalgebra 0.34.2",
  "ndarray",
  "num",
  "num-bigint",
@@ -2743,15 +2743,15 @@ dependencies = [
  "num-traits",
  "omniswap",
  "once_cell",
- "ordered-float 5.1.0",
+ "ordered-float 5.5.0",
  "pathfinding",
  "permutohedron",
  "petgraph",
  "primal",
  "proconio 0.5.0",
- "rand 0.9.2",
+ "rand 0.9.5",
  "rand_chacha 0.9.0",
- "rand_core 0.9.3",
+ "rand_core 0.9.5",
  "rand_distr 0.5.1",
  "rand_hc",
  "rand_pcg",
@@ -2760,14 +2760,14 @@ dependencies = [
  "recur-fn",
  "regex",
  "rpds",
- "rustc-hash 2.1.1",
+ "rustc-hash 2.1.3",
  "smallvec",
  "static_assertions",
  "statrs",
  "superslice",
  "tap",
  "text_io",
- "thiserror 2.0.17",
+ "thiserror 2.0.20",
  "varisat",
 ]
 
@@ -2805,7 +2805,7 @@ dependencies = [
  "memoise",
  "multimap",
  "multiversion",
- "nalgebra 0.34.1",
+ "nalgebra 0.34.2",
  "ndarray",
  "num",
  "num-bigint",
@@ -2817,15 +2817,15 @@ dependencies = [
  "num-traits",
  "omniswap",
  "once_cell",
- "ordered-float 5.1.0",
+ "ordered-float 5.5.0",
  "pathfinding",
  "permutohedron",
  "petgraph",
  "primal",
  "proconio 0.5.0",
- "rand 0.9.2",
+ "rand 0.9.5",
  "rand_chacha 0.9.0",
- "rand_core 0.9.3",
+ "rand_core 0.9.5",
  "rand_distr 0.5.1",
  "rand_hc",
  "rand_pcg",
@@ -2834,14 +2834,14 @@ dependencies = [
  "recur-fn",
  "regex",
  "rpds",
- "rustc-hash 2.1.1",
+ "rustc-hash 2.1.3",
  "smallvec",
  "static_assertions",
  "statrs",
  "superslice",
  "tap",
  "text_io",
- "thiserror 2.0.17",
+ "thiserror 2.0.20",
  "varisat",
 ]
 
@@ -2879,7 +2879,7 @@ dependencies = [
  "memoise",
  "multimap",
  "multiversion",
- "nalgebra 0.34.1",
+ "nalgebra 0.34.2",
  "ndarray",
  "num",
  "num-bigint",
@@ -2891,15 +2891,15 @@ dependencies = [
  "num-traits",
  "omniswap",
  "once_cell",
- "ordered-float 5.1.0",
+ "ordered-float 5.5.0",
  "pathfinding",
  "permutohedron",
  "petgraph",
  "primal",
  "proconio 0.5.0",
- "rand 0.9.2",
+ "rand 0.9.5",
  "rand_chacha 0.9.0",
- "rand_core 0.9.3",
+ "rand_core 0.9.5",
  "rand_distr 0.5.1",
  "rand_hc",
  "rand_pcg",
@@ -2908,14 +2908,14 @@ dependencies = [
  "recur-fn",
  "regex",
  "rpds",
- "rustc-hash 2.1.1",
+ "rustc-hash 2.1.3",
  "smallvec",
  "static_assertions",
  "statrs",
  "superslice",
  "tap",
  "text_io",
- "thiserror 2.0.17",
+ "thiserror 2.0.20",
  "varisat",
 ]
 
@@ -2953,7 +2953,7 @@ dependencies = [
  "memoise",
  "multimap",
  "multiversion",
- "nalgebra 0.34.1",
+ "nalgebra 0.34.2",
  "ndarray",
  "num",
  "num-bigint",
@@ -2965,15 +2965,15 @@ dependencies = [
  "num-traits",
  "omniswap",
  "once_cell",
- "ordered-float 5.1.0",
+ "ordered-float 5.5.0",
  "pathfinding",
  "permutohedron",
  "petgraph",
  "primal",
  "proconio 0.5.0",
- "rand 0.9.2",
+ "rand 0.9.5",
  "rand_chacha 0.9.0",
- "rand_core 0.9.3",
+ "rand_core 0.9.5",
  "rand_distr 0.5.1",
  "rand_hc",
  "rand_pcg",
@@ -2982,14 +2982,14 @@ dependencies = [
  "recur-fn",
  "regex",
  "rpds",
- "rustc-hash 2.1.1",
+ "rustc-hash 2.1.3",
  "smallvec",
  "static_assertions",
  "statrs",
  "superslice",
  "tap",
  "text_io",
- "thiserror 2.0.17",
+ "thiserror 2.0.20",
  "varisat",
 ]
 
@@ -3027,7 +3027,7 @@ dependencies = [
  "memoise",
  "multimap",
  "multiversion",
- "nalgebra 0.34.1",
+ "nalgebra 0.34.2",
  "ndarray",
  "num",
  "num-bigint",
@@ -3039,15 +3039,15 @@ dependencies = [
  "num-traits",
  "omniswap",
  "once_cell",
- "ordered-float 5.1.0",
+ "ordered-float 5.5.0",
  "pathfinding",
  "permutohedron",
  "petgraph",
  "primal",
  "proconio 0.5.0",
- "rand 0.9.2",
+ "rand 0.9.5",
  "rand_chacha 0.9.0",
- "rand_core 0.9.3",
+ "rand_core 0.9.5",
  "rand_distr 0.5.1",
  "rand_hc",
  "rand_pcg",
@@ -3056,14 +3056,14 @@ dependencies = [
  "recur-fn",
  "regex",
  "rpds",
- "rustc-hash 2.1.1",
+ "rustc-hash 2.1.3",
  "smallvec",
  "static_assertions",
  "statrs",
  "superslice",
  "tap",
  "text_io",
- "thiserror 2.0.17",
+ "thiserror 2.0.20",
  "varisat",
 ]
 
@@ -3101,7 +3101,7 @@ dependencies = [
  "memoise",
  "multimap",
  "multiversion",
- "nalgebra 0.34.1",
+ "nalgebra 0.34.2",
  "ndarray",
  "num",
  "num-bigint",
@@ -3113,15 +3113,15 @@ dependencies = [
  "num-traits",
  "omniswap",
  "once_cell",
- "ordered-float 5.1.0",
+ "ordered-float 5.5.0",
  "pathfinding",
  "permutohedron",
  "petgraph",
  "primal",
  "proconio 0.5.0",
- "rand 0.9.2",
+ "rand 0.9.5",
  "rand_chacha 0.9.0",
- "rand_core 0.9.3",
+ "rand_core 0.9.5",
  "rand_distr 0.5.1",
  "rand_hc",
  "rand_pcg",
@@ -3130,14 +3130,14 @@ dependencies = [
  "recur-fn",
  "regex",
  "rpds",
- "rustc-hash 2.1.1",
+ "rustc-hash 2.1.3",
  "smallvec",
  "static_assertions",
  "statrs",
  "superslice",
  "tap",
  "text_io",
- "thiserror 2.0.17",
+ "thiserror 2.0.20",
  "varisat",
 ]
 
@@ -3175,7 +3175,7 @@ dependencies = [
  "memoise",
  "multimap",
  "multiversion",
- "nalgebra 0.34.1",
+ "nalgebra 0.34.2",
  "ndarray",
  "num",
  "num-bigint",
@@ -3187,15 +3187,15 @@ dependencies = [
  "num-traits",
  "omniswap",
  "once_cell",
- "ordered-float 5.1.0",
+ "ordered-float 5.5.0",
  "pathfinding",
  "permutohedron",
  "petgraph",
  "primal",
  "proconio 0.5.0",
- "rand 0.9.2",
+ "rand 0.9.5",
  "rand_chacha 0.9.0",
- "rand_core 0.9.3",
+ "rand_core 0.9.5",
  "rand_distr 0.5.1",
  "rand_hc",
  "rand_pcg",
@@ -3204,22 +3204,22 @@ dependencies = [
  "recur-fn",
  "regex",
  "rpds",
- "rustc-hash 2.1.1",
+ "rustc-hash 2.1.3",
  "smallvec",
  "static_assertions",
  "statrs",
  "superslice",
  "tap",
  "text_io",
- "thiserror 2.0.17",
+ "thiserror 2.0.20",
  "varisat",
 ]
 
 [[package]]
 name = "archery"
-version = "1.2.2"
+version = "1.2.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "70e0a5f99dfebb87bb342d0f53bb92c81842e100bbb915223e38349580e5441d"
+checksum = "33ca55ee147b1926dbea904f50fe4902494e97bc742205abbbf10c709e43815f"
 dependencies = [
  "triomphe",
 ]
@@ -3254,15 +3254,15 @@ checksum = "d92bec98840b8f03a5ff5413de5293bfcd8bf96467cf5452609f939ec6f5de16"
 
 [[package]]
 name = "autocfg"
-version = "1.5.0"
+version = "1.5.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c08606f8c3cbf4ce6ec8e28fb0014a2c086708fe954eaa885384a6165172e7e8"
+checksum = "f2032f911046de80f0a198e0901378627c33f59ea0ac00e363d481118bd70a53"
 
 [[package]]
 name = "az"
-version = "1.2.1"
+version = "1.3.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7b7e4c2464d97fe331d41de9d5db0def0a96f4d823b8b32a2efd503578988973"
+checksum = "be5eb007b7cacc6c660343e96f650fedf4b5a77512399eb952ca6642cf8d13f7"
 
 [[package]]
 name = "bitmaps"
@@ -3281,9 +3281,9 @@ checksum = "a8cc868e96ba5c32ffae4d42bf2940ca7fca317dcef3f19b6d7de66b6885abff"
 
 [[package]]
 name = "bitvec"
-version = "1.0.1"
+version = "1.1.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1bc2832c24239b0141d5674bb9174f9d68a8b5b3f2753311927c172ca46f7e9c"
+checksum = "ddcec3d12c579d40898fe0a9a358a803c23e9c52ca3c425707f81c9436211837"
 dependencies = [
  "funty",
  "radium",
@@ -3293,13 +3293,13 @@ dependencies = [
 
 [[package]]
 name = "bstr"
-version = "1.12.1"
+version = "1.13.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "63044e1ae8e69f3b5a92c736ca6269b8d12fa7efe39bf34ddb06d102cf0e2cab"
+checksum = "6bb31b46c14244e20ee9984b11bf5c992b91fb6939fea616e3512c8baecdbe5f"
 dependencies = [
  "memchr",
  "regex-automata",
- "serde",
+ "serde_core",
 ]
 
 [[package]]
@@ -3313,15 +3313,15 @@ dependencies = [
 
 [[package]]
 name = "bumpalo"
-version = "3.19.0"
+version = "3.20.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "46c5e41b57b8bba42a04676d81cb89e9ee8e859a1a66f80a5a72e1cb76b34d43"
+checksum = "72f5acc6cb2ba439de613abc23857ec3d78374d8ed5ac84e9d11336e87da8649"
 
 [[package]]
 name = "bytemuck"
-version = "1.24.0"
+version = "1.25.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1fbdf580320f38b612e485521afda1ee26d10cc9884efaaa750d383e13e3c5f4"
+checksum = "95832e849adfb21180ccb6826a99da14e5d266ae5c2e668e1602cf234f153797"
 
 [[package]]
 name = "cfg-if"
@@ -3331,36 +3331,36 @@ checksum = "9330f8b2ff13f34540b44e946ef35111825727b38d33286ef986142615121801"
 
 [[package]]
 name = "counter"
-version = "0.7.0"
+version = "0.7.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "337a5b3c62043f6a4f5331bdb467a7f7a2099dce8522bcded6d4ebda1214fa4c"
+checksum = "66e8e052be91f1c8aae2c1d81307d9f6e67f5f37001e3ddee419e971e73f03bc"
 dependencies = [
  "num-traits",
 ]
 
 [[package]]
 name = "deprecate-until"
-version = "0.1.1"
+version = "1.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7a3767f826efbbe5a5ae093920b58b43b01734202be697e1354914e862e8e704"
+checksum = "9d0795c0c5b2cab72b80d75b5cb08bde679e616c67e954669a2476668319ac3a"
 dependencies = [
  "proc-macro2",
  "quote",
  "semver",
- "syn 2.0.109",
+ "syn 2.0.119",
 ]
 
 [[package]]
 name = "easy-ext"
-version = "1.0.2"
+version = "1.0.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "cc5d6d6a8504f8caedd7de14576464383900cd3840b7033a7a3dce5ac00121ca"
+checksum = "8072bec12b909b65aec01fa6518f387cfbf3427d4475409ad622898cd347522c"
 
 [[package]]
 name = "either"
-version = "1.15.0"
+version = "1.18.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "48c757948c5ede0e46177b7add2e67155f70e33c07fea8284df6576da70b3719"
+checksum = "252afb9ae5eaa683babdc6a068b3f5726eb19e05070c731f9b2a23a7c3e8ed34"
 
 [[package]]
 name = "equivalent"
@@ -3387,10 +3387,34 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e6d5a32815ae3f33302d95fdcb2ce17862f8c65363dcfd29360480ba1001fc9c"
 
 [[package]]
-name = "getrandom"
-version = "0.2.16"
+name = "futures-core"
+version = "0.3.34"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "335ff9f135e4384c8150d6f27c6daed433577f86b4750418338c01a1a2528592"
+checksum = "92d699e522242e69e3003b94ecc1f960f3a5e015aa7c5d7486e65ad01dd94f5e"
+
+[[package]]
+name = "futures-task"
+version = "0.3.34"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "cd417de3d1d015fc3bfd2b1ea46dfc7bab72ef86f1cc7cc9c78e728b34a6d1fd"
+
+[[package]]
+name = "futures-util"
+version = "0.3.34"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0d50a92467f8ba5dd6e3ee5d4bd04d73ab2e4e1c44474a0674821dfce14b79bc"
+dependencies = [
+ "futures-core",
+ "futures-task",
+ "pin-project-lite",
+ "slab",
+]
+
+[[package]]
+name = "getrandom"
+version = "0.2.17"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ff2abc00be7fca6ebc474524697ae276ad847ad0a6b3faa4bcb027e9a4614ad0"
 dependencies = [
  "cfg-if",
  "js-sys",
@@ -3505,9 +3529,21 @@ checksum = "8babf46d4c1c9d92deac9f7be466f76dfc4482b6452fc5024b5e8daf6ffeb3ee"
 
 [[package]]
 name = "glam"
-version = "0.30.9"
+version = "0.30.10"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "bd47b05dddf0005d850e5644cae7f2b14ac3df487979dbfff3b56f20b1a6ae46"
+checksum = "19fc433e8437a212d1b6f1e68c7824af3aed907da60afa994e7f542d18d12aa9"
+
+[[package]]
+name = "glam"
+version = "0.31.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "556f6b2ea90b8d15a74e0e7bb41671c9bdf38cd9f78c284d750b9ce58a2b5be7"
+
+[[package]]
+name = "glam"
+version = "0.32.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f70749695b063ecbf6b62949ccccde2e733ec3ecbbd71d467dca4e5c6c97cca0"
 
 [[package]]
 name = "glidesort"
@@ -3523,9 +3559,9 @@ checksum = "65043da274378d68241eb9a8f8f8aa54e349136f7b8e12f63e3ef44043cc30e1"
 
 [[package]]
 name = "hashbag"
-version = "0.1.12"
+version = "0.1.13"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "98f494b2060b2a8f5e63379e1e487258e014cee1b1725a735816c0107a2e9d93"
+checksum = "7040a10f52cba493ddb09926e15d10a9d8a28043708a405931fe4c6f19fac064"
 
 [[package]]
 name = "hashbrown"
@@ -3538,9 +3574,9 @@ dependencies = [
 
 [[package]]
 name = "hashbrown"
-version = "0.16.0"
+version = "0.17.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5419bdc4f6a9207fbeba6d11b604d481addf78ecd10c11ad51e76c2f6482748d"
+checksum = "ed5909b6e89a2db4456e54cd5f673791d7eca6732202bbf2a9cc504fe2f9b84a"
 
 [[package]]
 name = "im-rc"
@@ -3564,12 +3600,12 @@ checksum = "d3c4d532eb2a0194b8cfa6ca3745f817e58e6844bb86a0cbba5ada68de5fce10"
 
 [[package]]
 name = "indexmap"
-version = "2.12.0"
+version = "2.14.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6717a8d2a5a929a1a2eb43a12812498ed141a0bcfb7e8f7844fbdbe4303bba9f"
+checksum = "d466e9454f08e4a911e14806c24e16fba1b4c121d1ea474396f396069cf949d9"
 dependencies = [
  "equivalent",
- "hashbrown 0.16.0",
+ "hashbrown 0.17.1",
 ]
 
 [[package]]
@@ -3607,11 +3643,12 @@ checksum = "b71991ff56294aa922b450139ee08b3bfc70982c6b2c7562771375cf73542dd4"
 
 [[package]]
 name = "js-sys"
-version = "0.3.82"
+version = "0.3.104"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b011eec8cc36da2aab2d5cff675ec18454fad408585853910a202391cf9f8e65"
+checksum = "0e0c1080212aad755ea003d18543e8768dd432c48819efd73a7bf1e39b7a5a3a"
 dependencies = [
- "once_cell",
+ "cfg-if",
+ "futures-util",
  "wasm-bindgen",
 ]
 
@@ -3623,27 +3660,27 @@ checksum = "bbd2bcb4c963f2ddae06a2efc7e9f3591312473c50c6685e1f298068316e66fe"
 
 [[package]]
 name = "leb128"
-version = "0.2.5"
+version = "0.2.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "884e2677b40cc8c339eaefcb701c32ef1fd2493d71118dc0ca4b6a736c93bd67"
+checksum = "c83bff1d572d6b9aeef67ddfc8448e4a3737909cb28e81f97c791b9018703e52"
 
 [[package]]
 name = "libc"
-version = "0.2.177"
+version = "0.2.189"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2874a2af47a2325c2001a6e6fad9b16a53b802102b528163885171cf92b15976"
+checksum = "3eaf3ede3fee6db1a4c2ee091bf8a8b4dccdc6d17f656fb07896ee72867612f2"
 
 [[package]]
 name = "libm"
-version = "0.2.15"
+version = "0.2.16"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f9fbbcab51052fe104eb5e5d351cf728d30a5be1fe14d9be8a3b097481fb97de"
+checksum = "b6d2cec3eae94f9f509c767b45932f1ada8350c4bdb85af2fcab4a3c14807981"
 
 [[package]]
 name = "log"
-version = "0.4.28"
+version = "0.4.34"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "34080505efa8e45a4b816c349525ebe327ceaa8559756f0356cba97ef3bf7432"
+checksum = "f9f8bd3e56ce4dfc153cf470fffbfa98c7620958b312ca5c3a4b8d5181fd13c6"
 
 [[package]]
 name = "maplit"
@@ -3653,9 +3690,9 @@ checksum = "3e2e65a1a2e43cfcb47a895c4c8b10d1f4a61097f9f254f183aee60cad9c651d"
 
 [[package]]
 name = "matrixmultiply"
-version = "0.3.10"
+version = "0.3.11"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a06de3016e9fae57a36fd14dba131fccf49f74b40b7fbdb472f96e361ec71a08"
+checksum = "3f607c237553f086e7043417a51df26b2eb899d3caff94e6a67592ff992fedc7"
 dependencies = [
  "autocfg",
  "rawpointer",
@@ -3663,9 +3700,9 @@ dependencies = [
 
 [[package]]
 name = "memchr"
-version = "2.7.6"
+version = "2.8.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f52b00d39961fc5b2736ea853c9cc86238e165017a493d1d5c8eac6bdc4cc273"
+checksum = "cf8baf1c55e62ffcace7a9f06f4bd9cd3f0c4beb022d3b367256b91b87513d98"
 
 [[package]]
 name = "memoise"
@@ -3705,22 +3742,22 @@ checksum = "b093064383341eb3271f42e381cb8f10a01459478446953953c75d24bd339fc0"
 dependencies = [
  "proc-macro2",
  "quote",
- "syn 2.0.109",
+ "syn 2.0.119",
  "target-features",
 ]
 
 [[package]]
 name = "nalgebra"
-version = "0.33.2"
+version = "0.33.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "26aecdf64b707efd1310e3544d709c5c0ac61c13756046aaaba41be5c4f66a3b"
+checksum = "9d43ddcacf343185dfd6de2ee786d9e8b1c2301622afab66b6c73baf9882abfd"
 dependencies = [
  "approx 0.5.1",
  "matrixmultiply",
  "num-complex 0.4.6",
  "num-rational",
  "num-traits",
- "rand 0.8.5",
+ "rand 0.8.7",
  "rand_distr 0.4.3",
  "simba",
  "typenum",
@@ -3728,9 +3765,9 @@ dependencies = [
 
 [[package]]
 name = "nalgebra"
-version = "0.34.1"
+version = "0.34.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c4d5b3eff5cd580f93da45e64715e8c20a3996342f1e466599cf7a267a0c2f5f"
+checksum = "df76ea0ff5c7e6b88689085804d6132ded0ddb9de5ca5b8aeb9eeadc0508a70a"
 dependencies = [
  "approx 0.5.1",
  "glam 0.14.0",
@@ -3748,7 +3785,9 @@ dependencies = [
  "glam 0.27.0",
  "glam 0.28.0",
  "glam 0.29.3",
- "glam 0.30.9",
+ "glam 0.30.10",
+ "glam 0.31.1",
+ "glam 0.32.1",
  "matrixmultiply",
  "nalgebra-macros",
  "num-complex 0.4.6",
@@ -3766,7 +3805,7 @@ checksum = "973e7178a678cfd059ccec50887658d482ce16b0aa9da3888ddeab5cd5eb4889"
 dependencies = [
  "proc-macro2",
  "quote",
- "syn 2.0.109",
+ "syn 2.0.119",
 ]
 
 [[package]]
@@ -3800,9 +3839,9 @@ dependencies = [
 
 [[package]]
 name = "num-bigint"
-version = "0.4.6"
+version = "0.4.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a5e44f723f1133c9deac646763579fdb3ac745e418f2a7af9cd0c431da1f20b9"
+checksum = "c89e69e7e0f03bea5ef08013795c25018e101932225a656383bd384495ecc367"
 dependencies = [
  "num-integer",
  "num-traits",
@@ -3835,25 +3874,24 @@ checksum = "ed3955f1a9c7c0c15e092f9c887db08b1fc683305fdf6eb6684f22555355e202"
 dependencies = [
  "proc-macro2",
  "quote",
- "syn 2.0.109",
+ "syn 2.0.119",
 ]
 
 [[package]]
 name = "num-integer"
-version = "0.1.46"
+version = "0.1.47"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7969661fd2958a5cb096e56c8e1ad0444ac2bbcd0061bd28660485a44879858f"
+checksum = "7ce2d95d4b3734dc35aa2f45e1aa22cd416814592a4f9d9205e11affd5b8e10b"
 dependencies = [
  "num-traits",
 ]
 
 [[package]]
 name = "num-iter"
-version = "0.1.45"
+version = "0.1.46"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1429034a0490724d0075ebb2bc9e875d6503c3cf69e235a8941aa757d83ef5bf"
+checksum = "c92800bd69a1eac91786bcfe9da64a897eb72911b8dc3095decbd07429e8048b"
 dependencies = [
- "autocfg",
  "num-integer",
  "num-traits",
 ]
@@ -3887,9 +3925,9 @@ checksum = "8b73dba5f4428a4b36f77fb700ebba05e7f3c8bdbea4530f94427eb2009196f8"
 
 [[package]]
 name = "once_cell"
-version = "1.21.3"
+version = "1.21.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "42f5e15c9953c5e4ccceeb2e7382a716482c34515315f7b03532b8b4e8393d2d"
+checksum = "9f7c3e4beb33f85d45ae3e3a1792185706c8e16d043238c593331cc7cd313b50"
 
 [[package]]
 name = "ordered-float"
@@ -3902,18 +3940,18 @@ dependencies = [
 
 [[package]]
 name = "ordered-float"
-version = "5.1.0"
+version = "5.5.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7f4779c6901a562440c3786d08192c6fbda7c1c2060edd10006b05ee35d10f2d"
+checksum = "8c7c9e0d9b23589f26070720bac724174bfec1083e82f7854cdd0267518343c0"
 dependencies = [
  "num-traits",
 ]
 
 [[package]]
 name = "partial_ref"
-version = "0.3.3"
+version = "0.3.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0f728bc9b1479656e40cba507034904a8c44027c0efdbbaf6a4bdc5f2d3a910c"
+checksum = "a6223a0b76d36dfb9583a3e0e8b01d7ba1674f663352b522d950e07db40e5075"
 dependencies = [
  "partial_ref_derive",
 ]
@@ -3937,16 +3975,16 @@ checksum = "57c0d7b74b563b49d38dae00a0c37d4d6de9b432382b2892f0574ddcae73fd0a"
 
 [[package]]
 name = "pathfinding"
-version = "4.14.0"
+version = "4.15.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "59ac35caa284c08f3721fb33c2741b5f763decaf42d080c8a6a722154347017e"
+checksum = "835ad2773f8587ad2d90a0f7f0022ca743dfd5a6a24ea25062f3519c38d2fcfa"
 dependencies = [
  "deprecate-until",
  "indexmap",
  "integer-sqrt",
  "num-traits",
- "rustc-hash 2.1.1",
- "thiserror 2.0.17",
+ "rustc-hash 2.1.3",
+ "thiserror 2.0.20",
 ]
 
 [[package]]
@@ -3968,16 +4006,22 @@ dependencies = [
 ]
 
 [[package]]
-name = "portable-atomic"
-version = "1.11.1"
+name = "pin-project-lite"
+version = "0.2.17"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f84267b20a16ea918e43c6a88433c2d54fa145c92a811b5b047ccbe153674483"
+checksum = "a89322df9ebe1c1578d689c92318e070967d1042b512afbe49518723f4e6d5cd"
+
+[[package]]
+name = "portable-atomic"
+version = "1.15.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "05c8b63e8d9609db387f0324918f81d68fe27748f084ef092fb35954d0539a85"
 
 [[package]]
 name = "portable-atomic-util"
-version = "0.2.4"
+version = "0.2.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d8a2f0d8d040d7848a709caf78912debcc3f33ee4b3cac47d73d1e1069e83507"
+checksum = "c2a106d1259c23fac8e543272398ae0e3c0b8d33c88ed73d0cc71b0f1d902618"
 dependencies = [
  "portable-atomic",
 ]
@@ -4039,9 +4083,9 @@ dependencies = [
 
 [[package]]
 name = "proc-macro2"
-version = "1.0.103"
+version = "1.0.107"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5ee95bc4ef87b8d5ba32e8b7714ccc834865276eab0aed5c9958d00ec45f49e8"
+checksum = "985e7ec9bb745e6ce6535b544d84d6cd6f7ad8bd711c398938ae983b91a766d9"
 dependencies = [
  "unicode-ident",
 ]
@@ -4074,9 +4118,9 @@ dependencies = [
 
 [[package]]
 name = "quote"
-version = "1.0.42"
+version = "1.0.47"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a338cc41d27e6cc6dce6cefc13a0729dfbb81c262b1f519331575dd80ef3067f"
+checksum = "1fbf4db142a473a8d80c26bbf18454ed458bf8d26c8219c331daecfdbd079001"
 dependencies = [
  "proc-macro2",
 ]
@@ -4095,9 +4139,9 @@ checksum = "dc33ff2d4973d518d823d61aa239014831e521c75da58e3df4840d3f47749d09"
 
 [[package]]
 name = "rand"
-version = "0.8.5"
+version = "0.8.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "34af8d1a0e25924bc5b7c43c079c942339d8f0a8b57c39049bef581b46327404"
+checksum = "22f6172bdec972074665ed81ed53b71da00bfc44b65a753cfde883ec4c702a1a"
 dependencies = [
  "libc",
  "rand_chacha 0.3.1",
@@ -4106,12 +4150,12 @@ dependencies = [
 
 [[package]]
 name = "rand"
-version = "0.9.2"
+version = "0.9.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6db2770f06117d490610c7488547d543617b21bfa07796d7a12f6f1bd53850d1"
+checksum = "b9ef1d0d795eb7d84685bca4f72f3649f064e6641543d3a8c415898726a57b41"
 dependencies = [
  "rand_chacha 0.9.0",
- "rand_core 0.9.3",
+ "rand_core 0.9.5",
 ]
 
 [[package]]
@@ -4131,7 +4175,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d3022b5f1df60f26e1ffddd6c66e8aa15de382ae63b3a0c1bfc0e4d3e3f325cb"
 dependencies = [
  "ppv-lite86",
- "rand_core 0.9.3",
+ "rand_core 0.9.5",
 ]
 
 [[package]]
@@ -4140,14 +4184,14 @@ version = "0.6.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "ec0be4795e2f6a28069bec0b5ff3e2ac9bafc99e6a9a7dc3547996c5c816922c"
 dependencies = [
- "getrandom 0.2.16",
+ "getrandom 0.2.17",
 ]
 
 [[package]]
 name = "rand_core"
-version = "0.9.3"
+version = "0.9.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "99d9a13982dcf210057a8a78572b2217b667c3beacbf3a0d8b454f6f82837d38"
+checksum = "76afc826de14238e6e8c374ddcc1fa19e374fd8dd986b0d2af0d02377261d83c"
 dependencies = [
  "getrandom 0.3.4",
 ]
@@ -4159,7 +4203,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "32cb0b9bc82b0a0876c2dd994a7e7a2683d3e7390ca40e6886785ef0c7e3ee31"
 dependencies = [
  "num-traits",
- "rand 0.8.5",
+ "rand 0.8.7",
 ]
 
 [[package]]
@@ -4169,7 +4213,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "6a8615d50dcf34fa31f7ab52692afec947c4dd0ab803cc87cb3b0b4570ff7463"
 dependencies = [
  "num-traits",
- "rand 0.9.2",
+ "rand 0.9.5",
 ]
 
 [[package]]
@@ -4178,7 +4222,7 @@ version = "0.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "54fc7b35e3026136eaf1decdc66ecde3efadfd663cc0d71115ad40da7ebcff63"
 dependencies = [
- "rand_core 0.9.3",
+ "rand_core 0.9.5",
 ]
 
 [[package]]
@@ -4187,7 +4231,7 @@ version = "0.9.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b48ac3f7ffaab7fac4d2376632268aa5f89abdb55f7ebf8f4d11fffccb2320f7"
 dependencies = [
- "rand_core 0.9.3",
+ "rand_core 0.9.5",
 ]
 
 [[package]]
@@ -4196,7 +4240,7 @@ version = "0.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "513962919efc330f829edb2535844d1b912b0fbe2ca165d613e4e8788bb05a5a"
 dependencies = [
- "rand_core 0.9.3",
+ "rand_core 0.9.5",
 ]
 
 [[package]]
@@ -4214,7 +4258,7 @@ version = "0.7.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f703f4665700daf5512dcca5f43afa6af89f09db47fb56be587f80636bda2d41"
 dependencies = [
- "rand_core 0.9.3",
+ "rand_core 0.9.5",
 ]
 
 [[package]]
@@ -4231,9 +4275,9 @@ checksum = "ddb239d0574f3f7a7f44da906a0484f1fc284f89cfbc4eca1895420dbf948201"
 
 [[package]]
 name = "regex"
-version = "1.12.2"
+version = "1.13.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "843bc0191f75f3e22651ae5f1e72939ab2f72a4bc30fa80a066bd66edefc24d4"
+checksum = "f020237b6c8eed93db2e2cb53c00c60a8e1bc73da7d073199a1180401450218d"
 dependencies = [
  "aho-corasick",
  "memchr",
@@ -4243,9 +4287,9 @@ dependencies = [
 
 [[package]]
 name = "regex-automata"
-version = "0.4.13"
+version = "0.4.18"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5276caf25ac86c8d810222b3dbb938e512c55c6831a10f3e6ed1c93b84041f1c"
+checksum = "ad8553b9b26413251cbf30e620595c7a41b3887f03da04579c0e6b0d6a06b4b2"
 dependencies = [
  "aho-corasick",
  "memchr",
@@ -4254,17 +4298,18 @@ dependencies = [
 
 [[package]]
 name = "regex-syntax"
-version = "0.8.8"
+version = "0.8.11"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7a2d987857b319362043e95f5353c0535c1f58eec5336fdfcf626430af7def58"
+checksum = "d6f6ff9a378485b298a5286656da665ba74413d36db0979633275d2e708145d4"
 
 [[package]]
 name = "rpds"
-version = "1.1.2"
+version = "1.2.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "acb4efcdbf5d5489a878f48686e08e0e38da594e98295235b5aeeabe905fbff6"
+checksum = "e025feb26210bc196b908e72deb063b1b4000754304341cbc168a1e72c857ebc"
 dependencies = [
  "archery",
+ "smallvec",
 ]
 
 [[package]]
@@ -4275,15 +4320,15 @@ checksum = "08d43f7aa6b08d49f382cde6a7982047c3426db949b1424bc4b7ec9ae12c6ce2"
 
 [[package]]
 name = "rustc-hash"
-version = "2.1.1"
+version = "2.1.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "357703d41365b4b27c590e3ed91eabb1b663f07c4c084095e60cbed4362dff0d"
+checksum = "6b1e7f9a428571be2dc5bc0505c13fb6bf936822b894ec87abf8a08a4e51742d"
 
 [[package]]
 name = "rustversion"
-version = "1.0.22"
+version = "1.0.23"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b39cdef0fa800fc44525c84ccb54a029961a8215f9619753635a9c0d2538d46d"
+checksum = "cf54715a573b99ac80df0bc206da022bcd442c974952c7b9720069370852e21f"
 
 [[package]]
 name = "safe_arch"
@@ -4296,15 +4341,15 @@ dependencies = [
 
 [[package]]
 name = "semver"
-version = "1.0.27"
+version = "1.0.28"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d767eb0aabc880b29956c35734170f26ed551a859dbd361d140cdbeca61ab1e2"
+checksum = "8a7852d02fc848982e0c167ef163aaff9cd91dc640ba85e263cb1ce46fae51cd"
 
 [[package]]
 name = "serde"
-version = "1.0.228"
+version = "1.0.229"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9a8e94ea7f378bd32cbbd37198a4a91436180c5bb472411e48b5ec2e2124ae9e"
+checksum = "4148590afebada386688f18773da617792bf2ef03ffc1e4cbd2b1d45b023e0ba"
 dependencies = [
  "serde_core",
  "serde_derive",
@@ -4312,22 +4357,22 @@ dependencies = [
 
 [[package]]
 name = "serde_core"
-version = "1.0.228"
+version = "1.0.229"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "41d385c7d4ca58e59fc732af25c3983b67ac852c1a25000afe1175de458b67ad"
+checksum = "67dca2c9c51e58a4791a4b1ed58308b39c64224d349a935ab5039aa360942a48"
 dependencies = [
  "serde_derive",
 ]
 
 [[package]]
 name = "serde_derive"
-version = "1.0.228"
+version = "1.0.229"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d540f220d3187173da220f885ab66608367b6574e925011a9353e4badda91d79"
+checksum = "e7a5d71263a5a7d47b41f6b3f06ba276f10cc18b0931f1799f710578e2309348"
 dependencies = [
  "proc-macro2",
  "quote",
- "syn 2.0.109",
+ "syn 3.0.4",
 ]
 
 [[package]]
@@ -4354,6 +4399,12 @@ dependencies = [
 ]
 
 [[package]]
+name = "slab"
+version = "0.4.12"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0c790de23124f9ab44544d7ac05d60440adc586479ce501c1d6d7da3cd8c9cf5"
+
+[[package]]
 name = "smallvec"
 version = "1.15.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -4376,9 +4427,9 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "2a3fe7c28c6512e766b0874335db33c94ad7b8f9054228ae1c2abd47ce7d335e"
 dependencies = [
  "approx 0.5.1",
- "nalgebra 0.33.2",
+ "nalgebra 0.33.3",
  "num-traits",
- "rand 0.8.5",
+ "rand 0.8.7",
 ]
 
 [[package]]
@@ -4409,9 +4460,20 @@ dependencies = [
 
 [[package]]
 name = "syn"
-version = "2.0.109"
+version = "2.0.119"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2f17c7e013e88258aa9543dcbe81aca68a667a9ac37cd69c9fbc07858bfe0e2f"
+checksum = "872831b642d1a07999a962a351ed35b955ea2cfc8f3862091e2a240a84f17297"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "unicode-ident",
+]
+
+[[package]]
+name = "syn"
+version = "3.0.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e6275cddf4610d1775e6d1fe9469b2e77d0f39fd98fb7450901b821e0c53649f"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -4459,11 +4521,11 @@ dependencies = [
 
 [[package]]
 name = "thiserror"
-version = "2.0.17"
+version = "2.0.20"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f63587ca0f12b72a0600bcba1d40081f830876000bb46dd2337a3051618f4fc8"
+checksum = "ec86235f5fcc2a73650310756d2ac5b138a5780bbbdfae3eeccec992c435ba4f"
 dependencies = [
- "thiserror-impl 2.0.17",
+ "thiserror-impl 2.0.20",
 ]
 
 [[package]]
@@ -4474,37 +4536,37 @@ checksum = "4fee6c4efc90059e10f81e6d42c60a18f76588c3d74cb83a0b242a2b6c7504c1"
 dependencies = [
  "proc-macro2",
  "quote",
- "syn 2.0.109",
+ "syn 2.0.119",
 ]
 
 [[package]]
 name = "thiserror-impl"
-version = "2.0.17"
+version = "2.0.20"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3ff15c8ecd7de3849db632e14d18d2571fa09dfc5ed93479bc4485c7a517c913"
+checksum = "bc04cd3e1236dd4a98afca4569f2deb3f120e5422a4023be2cb683f8486292af"
 dependencies = [
  "proc-macro2",
  "quote",
- "syn 2.0.109",
+ "syn 3.0.4",
 ]
 
 [[package]]
 name = "triomphe"
-version = "0.1.15"
+version = "0.1.16"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "dd69c5aa8f924c7519d6372789a74eac5b94fb0f8fcf0d4a97eb0bfc3e785f39"
+checksum = "b40688ea6389c8171614b25491f71d4a27946e0c7ce2da1c6de27e25abf1a0ae"
 
 [[package]]
 name = "typenum"
-version = "1.19.0"
+version = "1.20.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "562d481066bde0658276a35467c4af00bdc6ee726305698a55b86e61d7ad82bb"
+checksum = "b6f5e870be6c3b371b77fe0ee0bafb859fa4964b4404c27de1d380043c4dda20"
 
 [[package]]
 name = "unicode-ident"
-version = "1.0.22"
+version = "1.0.24"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9312f7c4f6ff9069b165498234ce8be658059c6728633667c526e27dc2cf1df5"
+checksum = "e6e4313cd5fcd3dad5cafa179702e2b244f760991f45397d14d4ebf38247da75"
 
 [[package]]
 name = "unicode-xid"
@@ -4613,18 +4675,18 @@ checksum = "ccf3ec651a847eb01de73ccad15eb7d99f80485de043efb2f370cd654f4ea44b"
 
 [[package]]
 name = "wasip2"
-version = "1.0.1+wasi-0.2.4"
+version = "1.0.4+wasi-0.2.12"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0562428422c63773dad2c345a1882263bbf4d65cf3f42e90921f787ef5ad58e7"
+checksum = "b67efb37e106e55ce722a510d6b5f9c17f083e5fc79afc2badeb12cc313d9487"
 dependencies = [
  "wit-bindgen",
 ]
 
 [[package]]
 name = "wasm-bindgen"
-version = "0.2.105"
+version = "0.2.127"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "da95793dfc411fbbd93f5be7715b0578ec61fe87cb1a42b12eb625caa5c5ea60"
+checksum = "1b70935747edd64d89de3efa29d73789b806c15798f8e7dca4d8ac356b50ce70"
 dependencies = [
  "cfg-if",
  "once_cell",
@@ -4635,9 +4697,9 @@ dependencies = [
 
 [[package]]
 name = "wasm-bindgen-macro"
-version = "0.2.105"
+version = "0.2.127"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "04264334509e04a7bf8690f2384ef5265f05143a4bff3889ab7a3269adab59c2"
+checksum = "77775f8f3f7217702089053b94958f8f54061a3f663417df76e19cbdcca29bc1"
 dependencies = [
  "quote",
  "wasm-bindgen-macro-support",
@@ -4645,22 +4707,22 @@ dependencies = [
 
 [[package]]
 name = "wasm-bindgen-macro-support"
-version = "0.2.105"
+version = "0.2.127"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "420bc339d9f322e562942d52e115d57e950d12d88983a14c79b86859ee6c7ebc"
+checksum = "e11d33f857dc2fb11b8bc75aee111aa9cbeb12cd9f25efd3d4c2a3dd4e235284"
 dependencies = [
  "bumpalo",
  "proc-macro2",
  "quote",
- "syn 2.0.109",
+ "syn 2.0.119",
  "wasm-bindgen-shared",
 ]
 
 [[package]]
 name = "wasm-bindgen-shared"
-version = "0.2.105"
+version = "0.2.127"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "76f218a38c84bcb33c25ec7059b07847d465ce0e0a76b995e134a45adcb6af76"
+checksum = "7ef64dbcc55df09c7e5a46182d181c2cfa3e925f3da937ea764728b4bbb9dcbf"
 dependencies = [
  "unicode-ident",
 ]
@@ -4677,9 +4739,9 @@ dependencies = [
 
 [[package]]
 name = "wit-bindgen"
-version = "0.46.0"
+version = "0.57.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f17a85883d4e6d00e8a97c586de764dabcc06133f7f1d55dce5cdc070ad7fe59"
+checksum = "1ebf944e87a7c253233ad6766e082e3cd714b5d03812acc24c318f549614536e"
 
 [[package]]
 name = "wyz"
@@ -4692,20 +4754,20 @@ dependencies = [
 
 [[package]]
 name = "zerocopy"
-version = "0.8.27"
+version = "0.8.56"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0894878a5fa3edfd6da3f88c4805f4c8558e2b996227a3d864f47fe11e38282c"
+checksum = "556764e583adb45a9f8d413c2a147fa7e8d821e48e12b14fd560b607998b75eb"
 dependencies = [
  "zerocopy-derive",
 ]
 
 [[package]]
 name = "zerocopy-derive"
-version = "0.8.27"
+version = "0.8.56"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "88d2b8d9c68ad2b9e4340d7832716a4d21a22a1154777ad56ea55c51a9cf3831"
+checksum = "f2ab42fc20575779bd240faa45f94a74256f755c0fa9e89f0ede20d91d0cdfc1"
 dependencies = [
  "proc-macro2",
  "quote",
- "syn 2.0.109",
+ "syn 2.0.119",
 ]
