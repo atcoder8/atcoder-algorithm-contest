@@ -23,17 +23,20 @@ fn main() {
     }
 
     let mut num_combs = Mint::new(1);
-    // 各 `i` に対し、`1 ≤ j < i` かつ `Q_i < Q_j` を満たす最大の `j` を格納する
-    let mut recently_greater = vec![0; n];
+    // `Q` の要素に対して単調減少になるようにインデックスを管理
+    let mut stack: Vec<usize> = vec![];
     for i in 1..n {
-        // `Q_i < Q_j` を満たす最大の `j` 、もしくは先頭まで遡る
-        let mut j = i - 1;
-        while j > 0 && qq[i] > qq[j] {
-            j = recently_greater[j];
+        // `Q_i < Q_j` を満たす最大の `j` を求める (存在しない場合は `0`)
+        while let Some(&j) = stack.last()
+            && qq[i] > qq[j]
+        {
+            stack.pop();
         }
-        recently_greater[i] = j;
+        let j = stack.last().copied().unwrap_or(0);
 
-        // `Q_i` の親にできる要素の個数を掛ける
+        // `qq[i] < qq[j]` より単調減少の状態が保たれる
+        stack.push(i);
+
         num_combs *= i - j;
     }
 
