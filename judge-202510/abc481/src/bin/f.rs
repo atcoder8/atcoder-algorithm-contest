@@ -1,5 +1,4 @@
-// unfinished
-
+use im_rc::HashMap;
 use itertools::Itertools;
 use proconio::{input, marker::Usize1};
 
@@ -16,48 +15,49 @@ fn main() {
     let mut graph = vec![vec![]; n];
     for &(u, v, weight) in &abc {
         graph[u].push((v, weight));
-        graph[v].push((u, weight));
     }
 
     #[derive(Debug, Clone, Copy)]
     struct Node {
         order: usize,
+        number: u32,
         current: usize,
         score: Mint,
     }
 
+    // 整理番号を発行するためのカウンター
     let mut counter = 0_usize..;
 
     let mut min_scores = vec![None::<Mint>; n];
     let mut heap = MinHeap::from_value(
         Node {
             order: counter.next().unwrap(),
+            number: 0,
             current: 0,
             score: Mint::new(0),
         },
-        |node| node.order,
+        |node| (node.order, node.number),
     );
+    let mut map = HashMap::<usize, [usize; 9]>::new();
     while let Some(node) = heap.pop() {
-        let mut currents = vec![node.current];
-        while let Some(&other_node) = heap.peek()
-            && other_node.order == node.order
-        {
-            heap.pop();
-            currents.push(other_node.current);
+        if min_scores[node.current].is_some() {
+            continue;
         }
-        currents.retain(|&current| min_scores[current].is_none());
-        currents
-            .iter()
-            .for_each(|&current| min_scores[current] = Some(node.score));
 
-        let orders: [usize; 9] = counter.by_ref().take(9).collect_array().unwrap();
-        for &current in &currents {
-            heap.extend(graph[current].iter().map(|&(next, number)| Node {
-                order: orders[number as usize - 1],
-                current: next,
-                score: 10 * node.score + number,
-            }));
-        }
+        min_scores[node.current] = Some(node.score);
+
+        // 現在の整理番号と1~9の数字のペアに新たな整理番号を対応付ける
+        // 既に対応付けが存在する場合はそのまま取得する
+        let lookup = *map
+            .entry(node.order)
+            .or_insert(std::array::from_fn(|_| counter.next().unwrap()));
+
+        heap.extend(graph[node.current].iter().map(|&(next, number)| Node {
+            order: lookup[number as usize - 1],
+            number,
+            current: next,
+            score: 10 * node.score + number,
+        }));
     }
 
     let output = min_scores[1..]
