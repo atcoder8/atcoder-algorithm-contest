@@ -1,4 +1,3 @@
-use im_rc::HashMap;
 use itertools::Itertools;
 use proconio::{input, marker::Usize1};
 
@@ -17,28 +16,18 @@ fn main() {
         graph[u].push((v, weight));
     }
 
-    #[derive(Debug, Clone, Copy)]
+    #[derive(Debug, Clone, Copy, Default)]
     struct Node {
-        order: usize,
+        rank: usize,
         number: u32,
         current: usize,
         score: Mint,
     }
 
-    // 整理番号を発行するためのカウンター
-    let mut counter = 0_usize..;
-
     let mut min_scores = vec![None::<Mint>; n];
-    let mut heap = MinHeap::from_value(
-        Node {
-            order: counter.next().unwrap(),
-            number: 0,
-            current: 0,
-            score: Mint::new(0),
-        },
-        |node| (node.order, node.number),
-    );
-    let mut map = HashMap::<usize, [usize; 9]>::new();
+    let mut heap = MinHeap::from_value(Node::default(), |node| (node.rank, node.number));
+    let mut rank = 0;
+    let mut last_pair = (0, 0);
     while let Some(node) = heap.pop() {
         if min_scores[node.current].is_some() {
             continue;
@@ -46,14 +35,14 @@ fn main() {
 
         min_scores[node.current] = Some(node.score);
 
-        // 現在の整理番号と1~9の数字のペアに新たな整理番号を対応付ける
-        // 既に対応付けが存在する場合はそのまま取得する
-        let lookup = *map
-            .entry(node.order)
-            .or_insert(std::array::from_fn(|_| counter.next().unwrap()));
+        // 遷移元と辺の数字のペアが更新された場合にランクをインクリメントする
+        if (node.rank, node.number) != last_pair {
+            last_pair = (node.rank, node.number);
+            rank += 1;
+        }
 
         heap.extend(graph[node.current].iter().map(|&(next, number)| Node {
-            order: lookup[number as usize - 1],
+            rank,
             number,
             current: next,
             score: 10 * node.score + number,
