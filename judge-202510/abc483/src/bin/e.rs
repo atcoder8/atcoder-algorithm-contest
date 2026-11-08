@@ -1,5 +1,3 @@
-// unfinished
-
 use itertools::Itertools;
 use proconio::{input, marker::Chars};
 
@@ -9,36 +7,28 @@ fn main() {
         ss: [Chars; n],
     }
 
-    let mut inclusive = 0_usize;
-    let mut exclusive = 0_usize;
-    for bits in 0_u32..1 << m {
-        if bits.count_ones() > 2 {
-            continue;
-        }
+    let count_equiv_combinations = |ignore_positions: &[usize]| {
+        let masked = ss.iter().map(|s| {
+            let mut t = s.clone();
+            ignore_positions.iter().for_each(|&pos| t[pos] = '*');
+            t
+        });
+        masked
+            .counts()
+            .values()
+            .map(|cnt| cnt * (cnt - 1) / 2)
+            .sum::<usize>()
+    };
 
-        let tt = ss
-            .iter()
-            .map(|s| {
-                let mut t = s.clone();
-                for i in 0..m {
-                    if bits >> i & 1 == 1 {
-                        t[i] = '*';
-                    }
-                }
+    let count_by_distance = |dist: usize| {
+        (0..m)
+            .combinations(dist)
+            .map(|positions| count_equiv_combinations(&positions))
+            .sum::<usize>()
+    };
 
-                t
-            })
-            .sorted_unstable();
-        let num = tt
-            .dedup_with_count()
-            .map(|(cnt, _)| cnt * (cnt - 1) / 2)
-            .sum::<usize>();
-        if bits.count_ones() % 2 == 0 {
-            inclusive += num;
-        } else {
-            exclusive += num;
-        }
-    }
+    let [cnt0, cnt1, cnt2] = [0, 1, 2].map(count_by_distance);
 
-    println!("{}", inclusive - exclusive);
+    let num_combs = (m - 1) * (m - 2) / 2 * cnt0 + cnt2 - (m - 2) * cnt1;
+    println!("{num_combs}");
 }
